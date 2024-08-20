@@ -10,12 +10,12 @@ const Footer = ({id}: any) => {
     <div id={id} className="pt-[8rem] pb-[4rem] bg-[#02050a]">
       <div className="grid border-b-[1px] pb-[6rem] border-gray-400 grid-cols-1 lg:grid-cols-3 md:grid-cols-2 w-[80%] mx-auto gap-[3rem]">
         <div className="flex items-center space-x-6">
-          <div className="md:w-[6.5rem] md:h-[6.5rem] w-[5rem] h-[5rem] flex items-center justify-center rounded-full bg-[#55e6a5]">
+          <div className="md:w-[10.5rem] md:h-[6.5rem] w-[5rem] h-[5rem] flex items-center justify-center rounded-full bg-[#55e6a5]">
             <MapIcon className="md:w-[4rem] md:h-[4rem] w-[3.5rem] h-[3.5rem] text-black" />
           </div>
           <div>
             <h1 className="text-[25px] mb-[0.2rem] font-semibold text-[white]">
-              Addres
+              Address
             </h1>
             <p className="text-[17px] w-[90%] text-white opacity-60">
             Bekasi, Permata legenda Blok K8 / 1. 17156
