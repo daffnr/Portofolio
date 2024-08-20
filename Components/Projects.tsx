@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import router from 'next/router'
-
+    
 const Projects = ({id}:any) => {
   return (
     <div id={id} className="bg-[#02050a] pt-[4rem] md:pt-[8rem] pb-[1rem]">
