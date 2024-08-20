@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
-import Nav from "@/Components/Nav";
-import MobileNav from "@/Components/MobileNav";
-import Hero from "@/Components/Hero";
-import About from "@/Components/About";
-import Services from "@/Components/Services";
-import Skils from "@/Components/Skils";
-import Projects from "@/Components/Projects";
-import Footer from "@/Components/Footer";
+import Nav from "@/components/Nav";
+import MobileNav from "@/components/MobileNav";
+import Hero from "@/components/Hero";
+import About from "@/components/About";
+import Services from "@/components/Services";
+import Skils from "@/components/Skils";
+import Projects from "@/components/Projects";
+import Footer from "@/components/Footer";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
