@@ -44,10 +44,8 @@ useEffect(() =>{
   return (
     <div className="overflow-x-hidden">
       <div>
-        {/* Navbar */}
         <MobileNav nav={nav} closeNav={closeNav} />
         <Nav openNav={openNav} />
-        {/* Hero section */}
         <div className="bg-black h-[1000px]">
           <Hero id="home" />
           <div className="relative z-[30]">

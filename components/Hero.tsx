@@ -23,7 +23,7 @@ const Hero = ({id}:any) => {
             always eager to learn and adapt to new technologies, striving to
             push the boundaries of web development.
           </p>
-          <div className="mt-[2rem] flex-col space-y-6 sm:space-y-0 sm:flex sm:flex-row items-center sm:space-x-6">
+          {/* <div className="mt-[2rem] flex-col space-y-6 sm:space-y-0 sm:flex sm:flex-row items-center sm:space-x-6">
             <a href="/cv/cv.pdf"
               className="px-[2rem] hover:bg-yellow-400 transition-all duration-200 py-[0.8rem] text-[18px]
             font-bold uppercase bg-[#55e6a5] text-black flex items-center space-x-2"
@@ -31,7 +31,7 @@ const Hero = ({id}:any) => {
               <p>Download Cv</p>
               <ArrowDownTrayIcon className="w-[1.6rem] h-[1.7rem] text-black" />
             </a>
-          </div>
+          </div> */}
         </div>
         <div
           data-aos="zoom-in"
