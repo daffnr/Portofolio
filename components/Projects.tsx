@@ -20,9 +20,9 @@ const Projects = ({id}:any) => {
           </div>
         </div>
         <div>
-          <div className="transform cursor-pointer hover:-translate-y-6 transition-all duration-200 relative w-[100%] h-[200px] md:h-[300px]">
+          <div onClick={() => router.push ("https://employee-list-liard.vercel.app/")} className="transform cursor-pointer hover:-translate-y-6 transition-all duration-200 relative w-[100%] h-[200px] md:h-[300px]">
             <Image
-              src="/images/project.png"
+              src="/images/employeeList.png"
               alt="portofolio"
               layout="fill"
               className="object-contain"
