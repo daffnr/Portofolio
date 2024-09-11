@@ -12,6 +12,7 @@ import 'aos/dist/aos.css';
 
 const HomePage = () => {
   const [nav, setNav] = useState(false);
+  
   const openNav = () => setNav(true);
   const closeNav = () => setNav(false);
 

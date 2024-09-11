@@ -12,6 +12,7 @@ const MobileNav = ({ nav, closeNav }: Props) => {
 
   const handleRedirect = (path: string) => {
     router.push(path)
+    closeNav()
   }
 
   return (
