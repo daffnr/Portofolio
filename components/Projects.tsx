@@ -62,7 +62,7 @@ const Projects = ({ id }: any) => {
             className="transform cursor-pointer hover:-translate-y-6 transition-all duration-200 relative w-[100%] h-[200px] md:h-[300px]"
           >
             <Image
-              src="/images/my-contact-app.png"
+              src="/images/contactApp.png"
               alt="portofolio"
               layout="fill"
               className="object-contain"
