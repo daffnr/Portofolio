@@ -84,6 +84,21 @@ const Projects = ({ id }: any) => {
             />
           </div>
         </div>
+        <div>
+          <div
+            onClick={() =>
+              router.push("https://drum-machine-opal-iota.vercel.app/")
+            }
+            className="transform cursor-pointer hover:-translate-y-6 transition-all duration-200 relative w-[100%] h-[200px] md:h-[300px]"
+          >
+            <Image
+              src="/images/drumMachine.png"
+              alt="portofolio"
+              layout="fill"
+              className="object-contain"
+            />
+          </div>
+        </div>
       </div>
     </div>
   );
