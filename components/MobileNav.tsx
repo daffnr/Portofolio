@@ -23,7 +23,6 @@ const MobileNav = ({ nav, closeNav }: Props) => {
         <div className="nav-link-mobile" onClick={() => handleRedirect('#home')}>HOME</div>
         <div className="nav-link-mobile" onClick={() => handleRedirect("#about")}>ABOUT</div>
         <div className="nav-link-mobile" onClick={() => handleRedirect('#services')}>SERVICES</div>
-        <div className="nav-link-mobile" onClick={() => handleRedirect("#skill")}>SKILL</div>
         <div className="nav-link-mobile" onClick={() => handleRedirect("#project")}>PROJECT</div>
         <div className="nav-link-mobile" onClick={() => handleRedirect("#contact")}>CONTACT</div>
       </div>
