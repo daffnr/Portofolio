@@ -1,6 +1,12 @@
 import Image from "next/image";
 import React from "react";
 import router from "next/router";
+import dynamic from "next/dynamic";
+
+const GlareCard = dynamic(
+  () => import("./ui/glare-card").then((mod) => mod.GlareCard),
+  { ssr: false }
+);
 
 const Projects = ({ id }: any) => {
   return (
@@ -8,95 +14,77 @@ const Projects = ({ id }: any) => {
       <h1 className="heading">
         Pro<span className="text-yellow-400">ject</span>
       </h1>
-      <div className="w-[80%] pt-[2rem] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[2rem]">
+      <div className="max-w-[1500px] px-52 pt-[2rem] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[2rem]">
         <div>
           <div
             onClick={() =>
-              router.push("https://web-company-profile-three.vercel.app/home")
+              window.open("https://web-company-profile-three.vercel.app/home")
             }
-            className="transform cursor-pointer hover:-translate-y-6 transition-all duration-200 relative w-[100%] h-[200px] md:h-[300px]"
           >
-            <Image
-              src="/images/companyWeb.png"
-              alt="portofolio"
-              layout="fill"
-              className="object-contain"
-            />
+            <GlareCard className="flex flex-col items-center justify-center">
+              <p className="text-white font-bold text-xl mt-4">
+                Best Martial Arts
+              </p>
+            </GlareCard>
           </div>
         </div>
         <div>
           <div
             onClick={() =>
-              router.push("https://employee-list-liard.vercel.app/")
+              window.open("https://employee-list-liard.vercel.app/")
             }
-            className="transform cursor-pointer hover:-translate-y-6 transition-all duration-200 relative w-[100%] h-[200px] md:h-[300px]"
           >
-            <Image
-              src="/images/employeeList.png"
-              alt="portofolio"
-              layout="fill"
-              className="object-contain"
-            />
+            <GlareCard className="flex flex-col items-center justify-center">
+              <p className="text-white font-bold text-xl mt-4">Employee List</p>
+            </GlareCard>
           </div>
         </div>
         <div>
           <div
             onClick={() =>
-              router.push("https://random-quotes-generator-puce.vercel.app/")
+              window.open("https://random-quotes-generator-puce.vercel.app/")
             }
-            className="transform cursor-pointer hover:-translate-y-6 transition-all duration-200 relative w-[100%] h-[200px] md:h-[300px]"
           >
-            <Image
-              src="/images/quotesGenerator.png"
-              alt="portofolio"
-              layout="fill"
-              className="object-contain"
-            />
+            <GlareCard className="flex flex-col items-center justify-center">
+              <p className="text-white font-bold text-xl mt-4">
+                Quotes Generator
+              </p>
+            </GlareCard>
           </div>
         </div>
         <div>
           <div
             onClick={() =>
-              router.push("https://my-contact-app-kappa.vercel.app/")
+              window.open("https://my-contact-app-kappa.vercel.app/")
             }
-            className="transform cursor-pointer hover:-translate-y-6 transition-all duration-200 relative w-[100%] h-[200px] md:h-[300px]"
           >
-            <Image
-              src="/images/contactApp.png"
-              alt="portofolio"
-              layout="fill"
-              className="object-contain"
-            />
+            <GlareCard className="flex flex-col items-center justify-center">
+              <p className="text-white font-bold text-xl mt-4">Contact App</p>
+            </GlareCard>
           </div>
         </div>
         <div>
           <div
             onClick={() =>
-              router.push("https://breaking-bad-characters-rose.vercel.app/")
+              window.open("https://breaking-bad-characters-rose.vercel.app/")
             }
-            className="transform cursor-pointer hover:-translate-y-6 transition-all duration-200 relative w-[100%] h-[200px] md:h-[300px]"
           >
-            <Image
-              src="/images/breakingBad.png"
-              alt="portofolio"
-              layout="fill"
-              className="object-contain"
-            />
+            <GlareCard className="flex flex-col items-center justify-center">
+              <p className="text-white font-bold text-xl mt-4">
+                Breaking Bad Characters
+              </p>
+            </GlareCard>
           </div>
         </div>
         <div>
           <div
             onClick={() =>
-              router.push("https://drum-machine-opal-iota.vercel.app/")
+              window.open("https://drum-machine-opal-iota.vercel.app/")
             }
-            className="transform cursor-pointer hover:-translate-y-6 transition-all duration-200 relative w-[100%] h-[200px] md:h-[300px]"
           >
-            <Image
-              src="/images/drumMachine.png"
-              alt="portofolio"
-              layout="fill"
-              className="object-contain"
-            />
+            <GlareCard className="flex flex-col items-center justify-center">
+              <p className="text-white font-bold text-xl mt-4">Drum Machine</p>
+            </GlareCard>
           </div>
         </div>
       </div>
