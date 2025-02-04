@@ -4,6 +4,7 @@ import MobileNav from "@/components/MobileNav";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Services from "@/components/Services";
+import Skils from "@/components/Skils";
 import Projects from "@/components/Projects";
 import Footer from "@/components/Footer";
 import AOS from "aos";
@@ -47,6 +48,7 @@ const HomePage = () => {
           <div className="relative z-[30]">
             <About id="about" />
             <Services id="services" />
+            <Skils id="skills" />
             <Projects id="project" />
             <Footer id="contact" />
           </div>

@@ -10,8 +10,8 @@ const GlareCard = dynamic(
 
 const Projects = ({ id }: any) => {
   return (
-    <div id={id} className="bg-[#02050a] pt-[4rem] md:pt-[8rem] pb-[1rem]">
-      <h1 className="heading">
+    <div id={id} className="pt-[4rem] md:pt-[8rem] pb-[4rem]">
+      <h1 className="heading mb-10">
         Pro<span className="text-yellow-400">ject</span>
       </h1>
       <div className="max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-8 pt-[2rem] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[2rem]">

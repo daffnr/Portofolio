@@ -21,10 +21,11 @@ const MobileNav = ({ nav, closeNav }: Props) => {
     >
       <div className="w-[100vw] h-[100vh] flex flex-col items-center justify-center">
         <div className="nav-link-mobile" onClick={() => handleRedirect('#home')}>HOME</div>
-        <div className="nav-link-mobile" onClick={() => handleRedirect("#about")}>ABOUT</div>
+        <div className="nav-link-mobile" onClick={() => handleRedirect('#about')}>ABOUT</div>
         <div className="nav-link-mobile" onClick={() => handleRedirect('#services')}>SERVICES</div>
-        <div className="nav-link-mobile" onClick={() => handleRedirect("#project")}>PROJECT</div>
-        <div className="nav-link-mobile" onClick={() => handleRedirect("#contact")}>CONTACT</div>
+        <div className="nav-link-mobile" onClick={() => handleRedirect('#skills')}>SKILL</div>
+        <div className="nav-link-mobile" onClick={() => handleRedirect('#project')}>PROJECT</div>
+        <div className="nav-link-mobile" onClick={() => handleRedirect('#contact')}>CONTACT</div>
       </div>
       <div
         onClick={closeNav}

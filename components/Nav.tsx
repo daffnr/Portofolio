@@ -23,6 +23,7 @@ const Nav = ({openNav}:Props) => {
             <div className='nav-link' onClick={() => handleRedirect('#home')}>HOME</div>
             <div className='nav-link' onClick={() => handleRedirect("#about")}>ABOUT</div>
             <div className='nav-link' onClick={() => handleRedirect('#services')}>SERVICES</div>
+            <div className='nav-link' onClick={() => handleRedirect('#skills')}>SKILL</div>
             <div className='nav-link' onClick={() => handleRedirect("#project")}>PROJECT</div>
             <div className='nav-link' onClick={() => handleRedirect("#contact")}>CONTACT</div>
             <div onClick={openNav}>
