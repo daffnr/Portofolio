@@ -14,8 +14,8 @@ const Projects = ({ id }: any) => {
       <h1 className="heading">
         Pro<span className="text-yellow-400">ject</span>
       </h1>
-      <div className="max-w-[1500px] px-52 pt-[2rem] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[2rem]">
-        <div>
+      <div className="max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-8 pt-[2rem] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[2rem]">
+        <div className="flex justify-center">
           <div
             onClick={() =>
               window.open("https://web-company-profile-three.vercel.app/home")
@@ -28,7 +28,7 @@ const Projects = ({ id }: any) => {
             </GlareCard>
           </div>
         </div>
-        <div>
+        <div className="flex justify-center">
           <div
             onClick={() =>
               window.open("https://employee-list-liard.vercel.app/")
@@ -39,7 +39,7 @@ const Projects = ({ id }: any) => {
             </GlareCard>
           </div>
         </div>
-        <div>
+        <div className="flex justify-center">
           <div
             onClick={() =>
               window.open("https://random-quotes-generator-puce.vercel.app/")
@@ -52,7 +52,7 @@ const Projects = ({ id }: any) => {
             </GlareCard>
           </div>
         </div>
-        <div>
+        <div className="flex justify-center">
           <div
             onClick={() =>
               window.open("https://my-contact-app-kappa.vercel.app/")
@@ -63,7 +63,7 @@ const Projects = ({ id }: any) => {
             </GlareCard>
           </div>
         </div>
-        <div>
+        <div className="flex justify-center">
           <div
             onClick={() =>
               window.open("https://breaking-bad-characters-rose.vercel.app/")
@@ -76,7 +76,7 @@ const Projects = ({ id }: any) => {
             </GlareCard>
           </div>
         </div>
-        <div>
+        <div className="flex justify-center">
           <div
             onClick={() =>
               window.open("https://drum-machine-opal-iota.vercel.app/")
