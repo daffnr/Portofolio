@@ -60,7 +60,7 @@ const Skils = ({ id }: any) => {
   return (
     <div id={id} className="pt-[4rem] md:pt-[8rem] pb-[4rem] bg-[#09101a]">
       <h1 className="heading">
-        <span className="mr-2">Tech</span>
+        <span>Tech&nbsp;</span>
         <span className="text-yellow-400">Stack</span>
       </h1>
       <div className="w-[80%] mx-auto pt-[4rem] md:pt-[5rem] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[2rem]">
@@ -77,7 +77,7 @@ const Skils = ({ id }: any) => {
 
     
       <h1 className="heading mt-12">
-        <span className="text-yellow-400 mr-2">Tools</span> 
+        <span className="text-yellow-400">Tools&nbsp;</span> 
         <span>I Use</span>
       </h1>
       <div className="w-[80%] mx-auto pt-[4rem] md:pt-[5rem] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[2rem]">
