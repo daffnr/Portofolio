@@ -29,18 +29,6 @@ const Projects: React.FC<{ id: string }> = ({ id }) => {
       link: "https://random-quotes-generator-puce.vercel.app/",
     },
     {
-      title: "Contact App",
-      description: "Manage your contacts.",
-      image: "/images/contactApp.png",
-      link: "https://my-contact-app-kappa.vercel.app/",
-    },
-    {
-      title: "Breaking Bad Characters",
-      description: "Explore characters from Breaking Bad.",
-      image: "/images/breakingBad.png",
-      link: "https://breaking-bad-characters-rose.vercel.app/",
-    },
-    {
       title: "Drum Machine",
       description: "Create beats with the drum machine.",
       image: "/images/drumMachine.png", 
