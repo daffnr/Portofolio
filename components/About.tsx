@@ -1,9 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
-import { ArrowDownTrayIcon } from "@heroicons/react/20/solid";
 import Image from "next/image";
 import React from "react";
 
-const About = ({id} : any) => {
+const About = ({ id }: any) => {
   return (
     <div id={id} className="bg-[#121121] pb-[4rem] pt-[4rem] md:pt-[8rem]">
       <div className="grid grid-cols-1 md:grid-cols-2 w-[80%] mx-auto gap-[3rem] items-center">
@@ -17,16 +16,19 @@ const About = ({id} : any) => {
           <div className="mb-[3rem] flex items-center md:space-x-10">
             <span className="w-[100px] hidden md:block h-[5px] bg-slate-400 rounded-sm"></span>
             <p className="text-[19px] text-slate-300 w-[80%]">
-              I'm a Web Developer with a strong focus on creating responsive and
-              user-friendly websites. I specialize in HTML, CSS, JavaScript,
-              Node.js, TypeScript, and MySQL, allowing me to work across both
-              front-end and back-end development. I’m a graduate of Purwadhika
-              bootcamp, where I honed my skills and deepened my understanding of
-              modern web technologies. I love solving problems through code and
-              continuously improving my skills with the latest technologies. My
-              goal is to build efficient and intuitive web applications that
-              provide a great user experience. Outside of work, I enjoy learning
-              about new web trends and contributing to open-source projects.
+              My transition from Agriculture to Web Development has taught me
+              the importance of adaptability and a growth mindset. After
+              graduating from Universitas Jenderal Soedirman, I joined
+              Purwadhika’s Full Stack Web Development bootcamp, where I
+              completed multiple projects and honed my skills in React.js,
+              Next.js, Tailwind CSS, Express.js, MySQL, and RESTful APIs.
+              Additionally, I gained hands-on experience with Docker for
+              containerization and GitHub for version control and collaborative
+              development. These experiences have equipped me to build modern,
+              user-centric web applications while continuously learning and
+              adapting to new challenges. I’m passionate about creating
+              efficient and scalable solutions, and I enjoy leveraging the
+              latest technologies to deliver high-quality results.
             </p>
           </div>
         </div>

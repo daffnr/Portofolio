@@ -18,7 +18,7 @@ const Nav = ({openNav}:Props) => {
         <div className='flex items-center justify-between w-[80%] mx-auto h-[100%]'>
             <h1 className='flex-[0.6] cursor-pointer text-[25px] text-white font-bold'>
                 DNR
-                <span className='text-yellow-300'>lab</span>
+                <span className='text-yellow-300'>studio</span>
             </h1>
             <div className='nav-link' onClick={() => handleRedirect('#home')}>HOME</div>
             <div className='nav-link' onClick={() => handleRedirect("#about")}>ABOUT</div>
