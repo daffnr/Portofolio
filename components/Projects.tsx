@@ -34,6 +34,12 @@ const Projects: React.FC<{ id: string }> = ({ id }) => {
       image: "/images/drumMachine.png", 
       link: "https://drum-machine-opal-iota.vercel.app/",
     },
+    {
+      title: "WishCart E-commerce",
+      description: "A simple and responsive e-commerce web application built with React and Redux. Browse products, manage your cart, and add new items with ease.",
+      image: "/images/wishCart.png", 
+      link: "https://react-redux-wishcart.vercel.app/",
+    }
   ];
 
   return (
