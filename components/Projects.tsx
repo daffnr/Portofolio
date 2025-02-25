@@ -17,10 +17,10 @@ const Projects: React.FC<{ id: string }> = ({ id }) => {
       link: "https://web-company-profile-three.vercel.app/home",
     },
     {
-      title: "Employee List",
-      description: "Manage employee data easily.",
-      image: "/images/employeeList.png",
-      link: "https://employee-list-liard.vercel.app/",
+      title: "Contact App",
+      description: "Manage and organize your contacts easily with this app.",
+      image: "/images/contactApp.png",
+      link: "https://my-contact-app-kappa.vercel.app/",
     },
     {
       title: "Quotes Generator",
