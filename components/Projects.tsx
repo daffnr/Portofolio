@@ -23,10 +23,10 @@ const Projects: React.FC<{ id: string }> = ({ id }) => {
       link: "https://my-contact-app-kappa.vercel.app/",
     },
     {
-      title: "Quotes Generator",
-      description: "Generate random quotes.",
-      image: "/images/quotesGenerator.png",
-      link: "https://random-quotes-generator-puce.vercel.app/",
+      title: "Netflix Clone",
+      description: "A Netflix-inspired movie streaming platform with Firebase authentication and TMDB API integration.",
+      image: "/images/netflixClone.png",
+      link: "https://netflix-clone-pink-mu.vercel.app/",
     },
     {
       title: "Drum Machine",
