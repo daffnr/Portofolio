@@ -39,7 +39,15 @@ const Projects: React.FC<{ id: string }> = ({ id }) => {
       description: "A simple and responsive e-commerce web application built with React and Redux. Browse products, manage your cart, and add new items with ease.",
       image: "/images/wishCart.png", 
       link: "https://react-redux-wishcart.vercel.app/",
+    },
+    {
+      title: "NewsApp Mobile",
+      description: "A clean and responsive mobile news application built with React Native and Expo. Browse the latest headlines, read full articles, and explore detailed news screens in a smooth native experience.",
+      image: "/images/newsApp.png",
+      link: "https://drive.google.com/file/d/1QobBGOPB1XhnAGyh_77hW78bMxQzI6An/view?usp=drive_link"
+
     }
+
   ];
 
   return (
