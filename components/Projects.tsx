@@ -58,11 +58,7 @@ const Projects: React.FC<{ id?: string }> = ({ id }) => {
         "A clean and responsive mobile news application built with React Native and Expo. Browse the latest headlines, read full articles, and explore detailed news screens in a smooth native experience.",
       image: "/images/newsApp.png",
       link: "https://drive.google.com/file/d/1QobBGOPB1XhnAGyh_77hW78bMxQzI6An/view?usp=drive_link",
-      previewImages: [
-        "/images/contactApp1.png",
-        "/images/contactApp2.png",
-        "/images/contactApp2.png",
-      ],
+      previewImages: ["/images/ssNewsApp1.png", "/images/ssNewsApp2.png"],
     },
   ];
 
