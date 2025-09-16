@@ -6,7 +6,6 @@ interface BentoGridProps {
   children?: React.ReactNode;
 }
 
-// Komponen Grid
 export const BentoGrid: React.FC<BentoGridProps> = ({
   className,
   children,
@@ -14,7 +13,6 @@ export const BentoGrid: React.FC<BentoGridProps> = ({
   return (
     <div
       className={cn(
-        // Grid responsive: 1 kolom di mobile, 3 kolom di desktop
         "grid grid-cols-1 md:grid-cols-3 gap-6 max-w-7xl mx-auto",
         className
       )}
@@ -24,7 +22,6 @@ export const BentoGrid: React.FC<BentoGridProps> = ({
   );
 };
 
-// Komponen Item Card
 interface BentoGridItemProps {
   className?: string;
   title?: string | React.ReactNode;
@@ -45,12 +42,10 @@ export const BentoGridItem: React.FC<BentoGridItemProps> = ({
   return (
     <div
       className={cn(
-        // card fix height biar konsisten, bg-black, text putih
         "row-span-1 rounded-xl h-[400px] group/bento hover:shadow-xl transition duration-200 shadow-input p-4 bg-black border border-neutral-800 flex flex-col overflow-hidden",
         className
       )}
     >
-      {/* Gambar */}
       {image && (
         <img
           src={image}
@@ -59,7 +54,6 @@ export const BentoGridItem: React.FC<BentoGridItemProps> = ({
         />
       )}
 
-      {/* Text */}
       <div className="flex-grow group-hover/bento:translate-x-2 transition duration-200">
         <div className="font-sans font-bold text-white mb-2 mt-2 break-words">
           {title}
@@ -69,7 +63,6 @@ export const BentoGridItem: React.FC<BentoGridItemProps> = ({
         </div>
       </div>
 
-      {/* Tombol */}
       <div className="flex gap-2 mt-4">
         <button
           onClick={() => link && window.open(link, "_blank")}

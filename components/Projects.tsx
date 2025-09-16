@@ -1,11 +1,9 @@
-// components/Projects.tsx
 "use client";
 import React from "react";
 import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
 import Modal from "./ui/modal";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
-
 
 interface Project {
   title: string;
@@ -37,25 +35,35 @@ const Projects: React.FC<{ id?: string }> = ({ id }) => {
     },
     {
       title: "Netflix Clone",
-      description: "A Netflix-inspired movie streaming platform with Firebase authentication and TMDB API integration.",
+      description:
+        "A Netflix-inspired movie streaming platform with Firebase authentication and TMDB API integration.",
       image: "/images/netflixClone.png",
       link: "https://netflix-clone-pink-mu.vercel.app/",
-      previewImages: ["/images/contactApp1.png", "/images/contactApp2.png"],
+      previewImages: [
+        "/images/ssNetflix1.png",
+        "/images/ssNetflix2.png",
+        "/images/ssNetflix3.png",
+      ],
     },
     {
       title: "Drum Machine",
       description: "Create beats with the drum machine.",
-      image: "/images/drumMachine.png", 
+      image: "/images/drumMachine.png",
       link: "https://drum-machine-opal-iota.vercel.app/",
       previewImages: ["/images/ssDrum.png"],
     },
     {
       title: "NewsApp Mobile",
-      description: "A clean and responsive mobile news application built with React Native and Expo. Browse the latest headlines, read full articles, and explore detailed news screens in a smooth native experience.",
+      description:
+        "A clean and responsive mobile news application built with React Native and Expo. Browse the latest headlines, read full articles, and explore detailed news screens in a smooth native experience.",
       image: "/images/newsApp.png",
       link: "https://drive.google.com/file/d/1QobBGOPB1XhnAGyh_77hW78bMxQzI6An/view?usp=drive_link",
-      previewImages: ["/images/contactApp1.png", "/images/contactApp2.png","/images/contactApp2.png"],
-    }
+      previewImages: [
+        "/images/contactApp1.png",
+        "/images/contactApp2.png",
+        "/images/contactApp2.png",
+      ],
+    },
   ];
 
   const [isOpen, setIsOpen] = React.useState(false);
