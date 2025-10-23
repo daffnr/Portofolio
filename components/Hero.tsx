@@ -12,7 +12,6 @@ const Hero = ({ id }: any) => {
     >
       <Particle />
       <div className="w-[80%] grid-cols-1 mx-auto grid lg:grid-cols-2 gap-[3rem] h-[100%] items-center p-[1rem]">
-        {/* Teks */}
         <div className="pt-[2rem]">
           <h1 className="text-[35px] md:text-[50px] text-white font-bold">
             HI, I'M <span className="text-yellow-400">DAFFA!</span>
@@ -28,8 +27,6 @@ const Hero = ({ id }: any) => {
             experiences.
           </p>
         </div>
-
-        {/* Gambar */}
         <div
           data-aos="zoom-in"
           className="w-[300px] h-[300px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] bg-[#55e6a5] relative mx-auto lg:mx-0 flex items-center justify-center mt-10 rounded-full overflow-hidden"

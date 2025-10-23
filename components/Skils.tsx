@@ -16,6 +16,10 @@ const Skils = ({ id }: any) => {
       logo: "https://cdn.worldvectorlogo.com/logos/react-2.svg",
     },
     {
+      name: "React Native",
+      logo: "https://cdn.worldvectorlogo.com/logos/react-native-1.svg",
+    },
+    {
       name: "TypeScript",
       logo: "https://cdn.worldvectorlogo.com/logos/typescript.svg",
     },

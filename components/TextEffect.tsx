@@ -10,8 +10,6 @@ const TextEffect = () => {
         1500,
         "Back-end Developer",
         1500,
-        "FreeLancer Developer",
-        1500,
       ]}
       speed={50}
       className="text-[1rem] md:text-[2rem] text-[#55e6a5] font-bold uppercase"
