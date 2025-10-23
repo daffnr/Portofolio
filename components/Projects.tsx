@@ -60,6 +60,14 @@ const Projects: React.FC<{ id?: string }> = ({ id }) => {
       link: "https://drive.google.com/file/d/1QobBGOPB1XhnAGyh_77hW78bMxQzI6An/view?usp=drive_link",
       previewImages: ["/images/ssNewsApp1.png", "/images/ssNewsApp2.png"],
     },
+    {
+      title: "SIMPS PPOB",
+      description:
+        "SIMS PPOB is an online platform that allows users to pay bills and manage their transactions easily.",
+      image: "/images/ssSimsppob1.png",
+      link: "https://sims-ppob-daffa-naufal-ramadhan.vercel.app/",
+      previewImages: ["/images/ssSimsppob2.png", "/images/ssSimsppob1.png", "/images/ssSimsppob3.png", "/images/ssSimsppob4.png", "/images/ssSimsppob5.png"],
+    },
   ];
 
   const [isOpen, setIsOpen] = React.useState(false);
