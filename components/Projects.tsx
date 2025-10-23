@@ -46,11 +46,19 @@ const Projects: React.FC<{ id?: string }> = ({ id }) => {
       ],
     },
     {
-      title: "Drum Machine",
-      description: "Create beats with the drum machine.",
-      image: "/images/drumMachine.png",
-      link: "https://drum-machine-opal-iota.vercel.app/",
-      previewImages: ["/images/ssDrum.png"],
+      title: "Cermind",
+      description: "Cermind is a mobile quiz game designed to train concentration and quick thinking.",
+      image: "/images/ssCermind2.png",
+      link: "https://drive.google.com/file/d/1JiLFaEAb8TTPKoAIqyNJMoSJiEAvIv_v/view?usp=drive_link",
+      previewImages: [
+        "/images/ssCermind1.png",
+        "/images/ssCermind2.png",
+        "/images/ssCermind3.png",
+        "/images/ssCermind4.png",
+        "/images/ssCermind5.png",
+        "/images/ssCermind6.png",
+        "/images/ssCermind7.png",
+      ],
     },
     {
       title: "NewsApp Mobile",
@@ -66,7 +74,13 @@ const Projects: React.FC<{ id?: string }> = ({ id }) => {
         "SIMS PPOB is an online platform that allows users to pay bills and manage their transactions easily.",
       image: "/images/ssSimsppob1.png",
       link: "https://sims-ppob-daffa-naufal-ramadhan.vercel.app/",
-      previewImages: ["/images/ssSimsppob2.png", "/images/ssSimsppob1.png", "/images/ssSimsppob3.png", "/images/ssSimsppob4.png", "/images/ssSimsppob5.png"],
+      previewImages: [
+        "/images/ssSimsppob2.png",
+        "/images/ssSimsppob1.png",
+        "/images/ssSimsppob3.png",
+        "/images/ssSimsppob4.png",
+        "/images/ssSimsppob5.png",
+      ],
     },
   ];
 
