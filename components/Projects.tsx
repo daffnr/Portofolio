@@ -16,16 +16,19 @@ interface Project {
 const Projects: React.FC<{ id?: string }> = ({ id }) => {
   const items: Project[] = [
     {
-      title: "Best Martial Arts",
-      description: "Visit the Best Martial Arts website.",
-      image: "/images/companyWeb.png",
-      link: "https://web-company-profile-three.vercel.app/home",
+      title: "ngoCare Medical Supplies",
+      description:
+        "A modern company profile and semi e-commerce website for a medical equipment business.",
+      image: "/images/ngoCare1.png",
+      link: "https://ngo-care-solutions.vercel.app/",
       previewImages: [
-        "/images/ssCompanyWeb1.png",
-        "/images/ssCompanyWeb2.png",
-        "/images/ssCompanyWeb3.png",
+        "/images/ngoCare2.png",
+        "/images/ngoCare3.png",
+        "/images/ngoCare4.png",
+        "/images/ngoCare4.png",
       ],
     },
+
     {
       title: "Contact App",
       description: "Manage and organize your contacts easily with this app.",
@@ -47,7 +50,8 @@ const Projects: React.FC<{ id?: string }> = ({ id }) => {
     },
     {
       title: "Cermind",
-      description: "Cermind is a mobile quiz game designed to train concentration and quick thinking.",
+      description:
+        "Cermind is a mobile quiz game designed to train concentration and quick thinking.",
       image: "/images/ssCermind2.png",
       link: "https://drive.google.com/file/d/1JiLFaEAb8TTPKoAIqyNJMoSJiEAvIv_v/view?usp=drive_link",
       previewImages: [
