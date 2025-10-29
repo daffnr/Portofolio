@@ -1,23 +1,31 @@
 import { EnvelopeIcon } from "@heroicons/react/20/solid";
 import { FaGithub, FaLinkedin, FaInstagram, FaArrowUp } from "react-icons/fa";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 
-const Footer = ({ id }: any) => {
+const Footer = React.memo(({ id }: any) => {
   const [showScrollTop, setShowScrollTop] = useState(false);
 
-  const scrollToTop = () => {
+  const scrollToTop = useCallback(() => {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
-  };
+  }, []);
 
   useEffect(() => {
+    let ticking = false;
+    
     const handleScroll = () => {
-      setShowScrollTop(window.scrollY > 300);
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          setShowScrollTop(window.scrollY > 300);
+          ticking = false;
+        });
+        ticking = true;
+      }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -192,6 +200,8 @@ const Footer = ({ id }: any) => {
       )}
     </div>
   );
-};
+});
+
+Footer.displayName = 'Footer';
 
 export default Footer;

@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React from "react";
 
-const About = ({ id }: any) => {
+const About = React.memo(({ id }: any) => {
   return (
     <div id={id} className="bg-[#121121] pb-[4rem] pt-[4rem] md:pt-[8rem]">
       <div className="grid grid-cols-1 md:grid-cols-2 w-[80%] mx-auto gap-[3rem] items-center">
@@ -39,12 +39,16 @@ const About = ({ id }: any) => {
             layout="fill"
             objectFit="contain"
             className="relative z-[11] w-[100%] h-[100%] object-contain"
+            loading="lazy"
+            priority={false}
           />
           <div className="absolute w-[63%] h-[100%] z-[10] bg-[#55e6a5] top-[1.2rem] right-[4.5rem]"></div>
         </div>
       </div>
     </div>
   );
-};
+});
+
+About.displayName = 'About';
 
 export default About;

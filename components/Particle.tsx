@@ -24,25 +24,14 @@ const Particle = () => {
                 value: "transparent",
             },
         },
-        fpsLimit: 120,
+        fpsLimit: 60,
         interactivity: {
             events: {
                 onClick: {
-                    enable: true,
-                    mode: "push",
+                    enable: false,
                 },
                 onHover: {
-                    enable: true,
-                    mode: "repulse",
-                },
-            },
-            modes: {
-                push: {
-                    quantity: 4,
-                },
-                repulse: {
-                    distance: 200,
-                    duration: 0.4,
+                    enable: false,
                 },
             },
         },
@@ -54,7 +43,7 @@ const Particle = () => {
                 color: "#ffffff",
                 distance: 150,
                 enable: true,
-                opacity: 0.5,
+                opacity: 0.3,
                 width: 1,
             },
             move: {
@@ -64,26 +53,26 @@ const Particle = () => {
                     default: "out",
                 },
                 random: false,
-                speed: 6,
+                speed: 2,
                 straight: false,
             },
             number: {
                 density: {
                     enable: true,
                 },
-                value: 80,
+                value: 30,
             },
             opacity: {
-                value: 0.5,
+                value: 0.3,
             },
             shape: {
                 type: "circle",
             },
             size: {
-                value: { min: 1, max: 5 },
+                value: { min: 1, max: 3 },
             },
         },
-        detectRetina: true,
+        detectRetina: false,
     };
  
   if (init) {
