@@ -1,9 +1,11 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
 import Modal from "./ui/modal";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
+import FadeInWrapper from "./FadeInWrapper";
 
 interface Project {
   title: string;
@@ -101,26 +103,36 @@ const Projects: React.FC<{ id?: string }> = ({ id }) => {
 
   return (
     <div id={id} className="pt-[4rem] md:pt-[8rem] pb-[8rem] px-4">
-      <h1 className="heading mb-10">
-        Pro<span className="text-yellow-400">ject</span>
-      </h1>
+      <FadeInWrapper direction="up" delay={100} duration={600}>
+        <h1 className="heading mb-10">
+          Pro<span className="text-yellow-400">ject</span>
+        </h1>
+      </FadeInWrapper>
 
-      <BentoGrid className="max-w-[1500px] mx-auto sm:px-6 lg:px-8 pt-[2rem] gap-y-16 gap-x-8">
-        {items.map((item, i) => (
-          <BentoGridItem
-            key={i}
-            title={item.title}
-            description={item.description}
-            image={item.image}
-            link={item.link}
-            onPreview={() => {
-              setSelectedImages(item.previewImages);
-              setIsOpen(true);
-            }}
-            className="cursor-default h-auto"
-          />
-        ))}
-      </BentoGrid>
+      <FadeInWrapper direction="up" delay={200} duration={600}>
+        <BentoGrid className="max-w-[1500px] mx-auto sm:px-6 lg:px-8 pt-[2rem] gap-y-16 gap-x-8">
+          {items.map((item, i) => (
+            <FadeInWrapper 
+              key={i}
+              direction="up" 
+              delay={300 + i * 100} 
+              duration={500}
+            >
+              <BentoGridItem
+                title={item.title}
+                description={item.description}
+                image={item.image}
+                link={item.link}
+                onPreview={() => {
+                  setSelectedImages(item.previewImages);
+                  setIsOpen(true);
+                }}
+                className="cursor-default h-auto"
+              />
+            </FadeInWrapper>
+          ))}
+        </BentoGrid>
+      </FadeInWrapper>
 
       <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
         <Swiper
@@ -134,10 +146,13 @@ const Projects: React.FC<{ id?: string }> = ({ id }) => {
           {selectedImages.map((src, idx) => (
             <SwiperSlide key={idx}>
               <div className="flex items-center justify-center w-full h-[60vh]">
-                <img
+                <Image
                   src={src}
                   alt={`Preview ${idx}`}
+                  width={800}
+                  height={600}
                   className="max-h-[60vh] w-auto object-contain rounded"
+                  loading="lazy"
                 />
               </div>
             </SwiperSlide>

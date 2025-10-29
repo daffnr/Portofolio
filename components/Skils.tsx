@@ -1,4 +1,5 @@
 import React from "react";
+import FadeInWrapper from "./FadeInWrapper";
 
 const Skils = ({ id }: any) => {
   
@@ -63,38 +64,56 @@ const Skils = ({ id }: any) => {
 
   return (
     <div id={id} className="pt-[4rem] md:pt-[8rem] pb-[4rem] bg-[#09101a]">
-      <h1 className="heading">
-        <span>Tech&nbsp;</span>
-        <span className="text-yellow-400">Stack</span>
-      </h1>
-      <div className="w-[80%] mx-auto pt-[4rem] md:pt-[5rem] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[2rem]">
-        {techStack.map((tech, index) => (
-          <div
-            key={index}
-            className="p-4 bg-[#424c5f] rounded-lg text-center text-white hover:bg-[#d8ce3c] transition-all duration-300 flex flex-col items-center justify-center"
-          >
-            <img src={tech.logo} alt={tech.name} className="w-12 h-12 mb-2" />
-            <h3 className="text-lg font-semibold">{tech.name}</h3>
-          </div>
-        ))}
-      </div>
+      <FadeInWrapper direction="up" delay={100} duration={600}>
+        <h1 className="heading">
+          <span>Tech&nbsp;</span>
+          <span className="text-yellow-400">Stack</span>
+        </h1>
+      </FadeInWrapper>
+      
+      <FadeInWrapper direction="up" delay={200} duration={600}>
+        <div className="w-[80%] mx-auto pt-[4rem] md:pt-[5rem] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[2rem]">
+          {techStack.map((tech, index) => (
+            <FadeInWrapper 
+              key={index}
+              direction="up" 
+              delay={300 + index * 50} 
+              duration={500}
+            >
+              <div className="p-4 bg-[#424c5f] rounded-lg text-center text-white hover:bg-[#d8ce3c] transition-all duration-300 flex flex-col items-center justify-center">
+                <img src={tech.logo} alt={tech.name} className="w-12 h-12 mb-2" />
+                <h3 className="text-lg font-semibold">{tech.name}</h3>
+              </div>
+            </FadeInWrapper>
+          ))}
+        </div>
+      </FadeInWrapper>
 
     
-      <h1 className="heading mt-12">
-        <span className="text-yellow-400">Tools&nbsp;</span> 
-        <span>I Use</span>
-      </h1>
-      <div className="w-[80%] mx-auto pt-[4rem] md:pt-[5rem] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[2rem]">
-        {tools.map((tool, index) => (
-          <div
-            key={index}
-            className="p-4 bg-[#424c5f] rounded-lg text-center text-white hover:bg-[#d8ce3c] transition-all duration-300 flex flex-col items-center justify-center"
-          >
-            <img src={tool.logo} alt={tool.name} className="w-12 h-12 mb-2" />
-            <h3 className="text-lg font-semibold">{tool.name}</h3>
-          </div>
-        ))}
-      </div>
+      <FadeInWrapper direction="up" delay={100} duration={600}>
+        <h1 className="heading mt-12">
+          <span className="text-yellow-400">Tools&nbsp;</span> 
+          <span>I Use</span>
+        </h1>
+      </FadeInWrapper>
+      
+      <FadeInWrapper direction="up" delay={200} duration={600}>
+        <div className="w-[80%] mx-auto pt-[4rem] md:pt-[5rem] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[2rem]">
+          {tools.map((tool, index) => (
+            <FadeInWrapper 
+              key={index}
+              direction="up" 
+              delay={300 + index * 50} 
+              duration={500}
+            >
+              <div className="p-4 bg-[#424c5f] rounded-lg text-center text-white hover:bg-[#d8ce3c] transition-all duration-300 flex flex-col items-center justify-center">
+                <img src={tool.logo} alt={tool.name} className="w-12 h-12 mb-2" />
+                <h3 className="text-lg font-semibold">{tool.name}</h3>
+              </div>
+            </FadeInWrapper>
+          ))}
+        </div>
+      </FadeInWrapper>
     </div>
   );
 };
