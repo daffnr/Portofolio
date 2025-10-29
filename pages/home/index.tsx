@@ -6,6 +6,7 @@ import About from "@/components/About";
 import Services from "@/components/Services";
 import Skils from "@/components/Skils";
 import Projects from "@/components/Projects";
+import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -50,7 +51,8 @@ const HomePage = () => {
             <Services id="services" />
             <Skils id="skills" />
             <Projects id="project" />
-            <Footer id="contact" />
+            <ContactSection id="contact" />
+            <Footer id="footer" />
           </div>
         </div>
       </div>

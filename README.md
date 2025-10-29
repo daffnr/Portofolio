@@ -1,40 +1,123 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfolio Website
 
-## Getting Started
+Website portfolio pribadi yang dibangun menggunakan Next.js, TypeScript, dan Tailwind CSS. Website ini menampilkan informasi tentang developer, daftar project yang pernah dibuat, serta form kontak yang memungkinkan pengunjung mengirim pesan langsung melalui EmailJS.
 
-First, run the development server:
+## Deskripsi
+
+Portfolio website ini dirancang untuk memberikan gambaran profesional tentang skills, pengalaman, dan project yang telah dikerjakan. Tampilan modern dengan animasi halus dan desain responsif memastikan pengalaman pengguna yang optimal di berbagai perangkat.
+
+## Fitur Utama
+
+- Tampilan responsive untuk desktop dan mobile
+- Animasi scroll dan efek fade-in pada setiap section
+- Section Hero dengan perkenalan singkat dan background particle effect
+- Section About dengan informasi lengkap tentang developer
+- Section Projects menampilkan daftar project dengan card berukuran seragam
+- Section Skills menampilkan tech stack dan tools yang digunakan
+- Section Contact dengan integrasi EmailJS untuk mengirim pesan langsung ke email developer
+- Navigasi dengan smooth scroll antar section
+- Footer dengan informasi kontak dan sosial media
+
+## Teknologi yang Digunakan
+
+- Next.js 14 - Framework React untuk production
+- TypeScript - Type safety untuk kode yang lebih maintainable
+- Tailwind CSS - Utility-first CSS framework untuk styling
+- Framer Motion - Library animasi untuk efek transisi yang halus
+- EmailJS - Service untuk mengirim email dari form kontak
+- AOS (Animate On Scroll) - Library untuk animasi saat scroll
+- React Icons - Koleksi icon untuk UI
+
+## Cara Menjalankan Project
+
+### Prasyarat
+
+Pastikan Anda telah menginstall Node.js versi 18 atau lebih baru. Anda dapat mengecek versi Node.js dengan menjalankan:
+
+```bash
+node --version
+```
+
+### Instalasi
+
+1. Clone repository ini atau download source code
+
+```bash
+git clone <repository-url>
+cd portofolio
+```
+
+2. Install dependencies menggunakan npm atau package manager lainnya
+
+```bash
+npm install
+```
+
+atau
+
+```bash
+yarn install
+```
+
+### Menjalankan Development Server
+
+Jalankan development server dengan perintah berikut:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+atau
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+```bash
+yarn dev
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+Buka [http://localhost:3000](http://localhost:3000) di browser untuk melihat website.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### Build untuk Production
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Untuk membuat production build:
 
-## Learn More
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+Untuk menjalankan production build:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Konfigurasi EmailJS
 
-## Deploy on Vercel
+Form kontak menggunakan EmailJS untuk mengirim email. Untuk menggunakan fitur ini, Anda perlu:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Daftar akun di [EmailJS](https://www.emailjs.com/)
+2. Buat service dan template email
+3. Update konfigurasi di file `components/ContactSection.tsx`:
+   - Service ID
+   - Template ID
+   - Public Key
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Struktur Project
+
+```
+portofolio/
+├── components/          # React components
+│   ├── Hero.tsx
+│   ├── About.tsx
+│   ├── Projects.tsx
+│   ├── ContactSection.tsx
+│   └── ...
+├── pages/              # Next.js pages
+│   └── home/
+├── public/             # Static assets
+│   └── images/
+├── styles/             # Global styles
+└── lib/                # Utility functions
+```
+
+## Lisensi
+
+Project ini adalah project pribadi untuk portfolio.

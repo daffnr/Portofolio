@@ -8,7 +8,7 @@ const Hero = ({ id }: any) => {
   return (
     <div
       id={id}
-      className="min-h-[88vh] bg-[url('/images/banner.jpg')] mt-[10vh] bg-cover bg-center overflow-y-auto z-10 mb-[2rem]"
+      className="min-h-[88vh] bg-[url('/images/banner.jpg')] pt-[12vh] bg-cover bg-center overflow-y-auto z-10 mb-[2rem] scroll-mt-[12vh]"
     >
       <Particle />
       <div className="w-[80%] grid-cols-1 mx-auto grid lg:grid-cols-2 gap-[3rem] h-[100%] items-center p-[1rem]">

@@ -127,7 +127,7 @@ const Projects: React.FC<{ id?: string }> = ({ id }) => {
                   setSelectedImages(item.previewImages);
                   setIsOpen(true);
                 }}
-                className="cursor-default h-auto"
+                className="cursor-default"
               />
             </FadeInWrapper>
           ))}
