@@ -42,7 +42,7 @@ const MobileNav = ({ nav, closeNav }: Props) => {
 
       {/* Side Drawer Panel */}
       <div
-        className={`fixed top-0 right-0 h-[100dvh] w-[75vw] sm:w-[60vw] bg-black/20 backdrop-blur-2xl border-l border-white/10 z-[10000] transform transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] shadow-2xl flex flex-col ${
+        className={`fixed top-0 right-0 h-[100dvh] w-[75vw] sm:w-[60vw] bg-black/20 backdrop-blur-md border-l border-white/10 z-[10000] transform transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] shadow-2xl flex flex-col ${
           nav ? "translate-x-0" : "translate-x-full"
         }`}
       >

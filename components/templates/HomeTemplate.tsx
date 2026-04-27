@@ -25,9 +25,9 @@ const HomeTemplate = () => {
       initClassName: "aos-init",
       animatedClassName: "aos-animate",
       useClassNames: false,
-      disableMutationObserver: true,
-      debounceDelay: 100,
-      throttleDelay: 200,
+      disableMutationObserver: false,
+      debounceDelay: 50,
+      throttleDelay: 99,
 
       offset: 100,
       delay: 0,

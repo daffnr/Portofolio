@@ -32,8 +32,8 @@ const Nav = ({openNav}:Props) => {
     <div 
         className={`fixed z-[10000] top-0 left-0 right-0 md:left-1/2 md:-translate-x-1/2 md:w-[85%] lg:w-[900px] transition-all duration-500 flex items-center px-6 md:px-10 h-[10vh] md:h-[80px] md:rounded-full
         ${scrolled 
-            ? 'bg-black/40 backdrop-blur-xl border-b md:border border-white/10 shadow-2xl md:top-4' 
-            : 'bg-transparent md:bg-[#141c27]/80 md:backdrop-blur-md md:top-6'}`}
+            ? 'bg-black/40 backdrop-blur-md border-b md:border border-white/10 shadow-2xl md:top-4' 
+            : 'bg-transparent md:bg-[#141c27]/80 md:backdrop-blur-sm md:top-6'}`}
     >
         <div className='flex items-center justify-between w-full h-full'>
             {/* Logo */}

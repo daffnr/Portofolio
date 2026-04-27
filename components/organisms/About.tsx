@@ -41,9 +41,9 @@ const About = React.memo(({ id }: any) => {
             <Image
               src="/images/Daffa5.jpeg"
               alt="user"
-              layout="fill"
-              objectFit="contain"
-              className="relative z-[11] w-[100%] h-[100%] object-contain"
+              fill
+              style={{ objectFit: 'contain' }}
+              className="relative z-[11]"
               loading="lazy"
               priority={false}
             />

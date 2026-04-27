@@ -8,8 +8,20 @@ const Hero = ({ id }: any) => {
   return (
     <div
       id={id}
-      className="min-h-[88vh] bg-[url('/images/banner.jpg')] pt-[12vh] bg-cover bg-center overflow-y-auto z-10 mb-[2rem] scroll-mt-[12vh]"
+      className="min-h-[88vh] relative pt-[12vh] overflow-hidden z-10 mb-[2rem] scroll-mt-[12vh]"
     >
+      {/* Background Image Optimized */}
+      <Image 
+        src="/images/banner.jpg"
+        alt="Banner"
+        fill
+        priority
+        className="object-cover z-[-1]"
+        quality={75}
+      />
+      {/* Dark Overlay for better text readability */}
+      <div className="absolute inset-0 bg-[#09101a]/70 z-[-1]"></div>
+
       <Particle />
       <div className="w-[80%] grid-cols-1 mx-auto grid lg:grid-cols-2 gap-[3rem] h-[100%] items-center p-[1rem]">
         <div className="pt-[2rem]">
@@ -34,7 +46,7 @@ const Hero = ({ id }: any) => {
           <Image
             src="/images/Daffa4.jpeg"
             alt="user"
-            layout="fill"
+            fill
             className="object-cover rounded-full"
           />
         </div>
