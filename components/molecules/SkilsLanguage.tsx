@@ -24,7 +24,7 @@ const SkilsLanguage = ({
           {skill1}
         </h1>
         <span
-          className={`${level1} bottom-0 h-[6px] absolute bg-[#55e6a5]`}
+          className={`${level1} bottom-0 h-[6px] absolute bg-[#facc15]`}
         ></span>
       </div>
       <div className="relative mb-[3rem]">
@@ -32,7 +32,7 @@ const SkilsLanguage = ({
           {skill2}
         </h1>
         <span
-          className={`${level2} bottom-0 h-[6px] absolute bg-[#55e6a5]`}
+          className={`${level2} bottom-0 h-[6px] absolute bg-[#facc15]`}
         ></span>
       </div>
       <div className="relative mb-[3rem]">
@@ -40,7 +40,7 @@ const SkilsLanguage = ({
           {skill3}
         </h1>
         <span
-          className={`${level3} bottom-0 h-[6px] absolute bg-[#55e6a5]`}
+          className={`${level3} bottom-0 h-[6px] absolute bg-[#facc15]`}
         ></span>
       </div>
     </div>

@@ -29,7 +29,7 @@ const Hero = ({ id }: any) => {
         </div>
         <div
           data-aos="zoom-in"
-          className="w-[300px] h-[300px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] bg-[#55e6a5] relative mx-auto lg:mx-0 flex items-center justify-center mt-10 rounded-full overflow-hidden"
+          className="w-[300px] h-[300px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] bg-[#facc15] relative mx-auto lg:mx-0 flex items-center justify-center mt-10 rounded-full overflow-hidden"
         >
           <Image
             src="/images/Daffa4.jpeg"

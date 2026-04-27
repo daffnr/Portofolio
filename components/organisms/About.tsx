@@ -9,7 +9,7 @@ const About = React.memo(({ id }: any) => {
       <div className="grid grid-cols-1 md:grid-cols-2 w-[80%] mx-auto gap-[3rem] items-center">
         <FadeInWrapper direction="left" delay={100} duration={800}>
           <div>
-            <h1 className="text-[20-px] font-bold uppercase text-[#55e6a5] mb-[1rem]">
+            <h1 className="text-[20-px] font-bold uppercase text-[#facc15] mb-[1rem]">
               ABOUT ME
             </h1>
             <h2 className="text-[25px] md:text-[35px] lg:text-[45px] md:leading-[3rem] leading-[2rem] capitalize mb-[3rem] font-bold text-white">
@@ -47,7 +47,7 @@ const About = React.memo(({ id }: any) => {
               loading="lazy"
               priority={false}
             />
-            <div className="absolute w-[63%] h-[100%] z-[10] bg-[#55e6a5] top-[1.2rem] right-[4.5rem]"></div>
+            <div className="absolute w-[63%] h-[100%] z-[10] bg-white top-[1.2rem] right-[4.5rem]"></div>
           </div>
         </FadeInWrapper>
       </div>

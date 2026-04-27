@@ -99,7 +99,7 @@ const ContactSection = ({ id }: { id?: string }) => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Get In <span className="text-[#55e6a5]">Touch</span>
+            Get In <span className="text-[#facc15]">Touch</span>
           </h2>
           <p className="text-lg text-slate-300 max-w-2xl mx-auto">
             Have a project in mind or want to collaborate? I&apos;d love to hear from you.
@@ -129,7 +129,7 @@ const ContactSection = ({ id }: { id?: string }) => {
                     value={formData.from_name}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-600 rounded-lg focus:ring-2 focus:ring-[#55e6a5] focus:border-transparent transition-all duration-200 bg-gray-700 text-white placeholder-gray-400 hover:border-gray-500"
+                    className="w-full px-4 py-3 border border-gray-600 rounded-lg focus:ring-2 focus:ring-[#facc15] focus:border-transparent transition-all duration-200 bg-gray-700 text-white placeholder-gray-400 hover:border-gray-500"
                     placeholder="Nama lengkap Anda"
                   />
                 </div>
@@ -145,7 +145,7 @@ const ContactSection = ({ id }: { id?: string }) => {
                     value={formData.from_email}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-600 rounded-lg focus:ring-2 focus:ring-[#55e6a5] focus:border-transparent transition-all duration-200 bg-gray-700 text-white placeholder-gray-400 hover:border-gray-500"
+                    className="w-full px-4 py-3 border border-gray-600 rounded-lg focus:ring-2 focus:ring-[#facc15] focus:border-transparent transition-all duration-200 bg-gray-700 text-white placeholder-gray-400 hover:border-gray-500"
                     placeholder="email@example.com"
                   />
                 </div>
@@ -161,7 +161,7 @@ const ContactSection = ({ id }: { id?: string }) => {
                     onChange={handleInputChange}
                     required
                     rows={5}
-                    className="w-full px-4 py-3 border border-gray-600 rounded-lg focus:ring-2 focus:ring-[#55e6a5] focus:border-transparent transition-all duration-200 bg-gray-700 text-white placeholder-gray-400 resize-none hover:border-gray-500"
+                    className="w-full px-4 py-3 border border-gray-600 rounded-lg focus:ring-2 focus:ring-[#facc15] focus:border-transparent transition-all duration-200 bg-gray-700 text-white placeholder-gray-400 resize-none hover:border-gray-500"
                     placeholder="Tulis pesan Anda di sini..."
                   />
                 </div>
@@ -197,14 +197,14 @@ const ContactSection = ({ id }: { id?: string }) => {
                   whileHover={{ x: 5 }}
                   className="flex items-center space-x-4"
                 >
-                  <div className="flex-shrink-0 w-12 h-12 bg-[#55e6a5] bg-opacity-20 rounded-lg flex items-center justify-center">
-                    <FaEnvelope className="w-6 h-6 text-[#55e6a5]" />
+                  <div className="flex-shrink-0 w-12 h-12 bg-[#facc15] bg-opacity-20 rounded-lg flex items-center justify-center">
+                    <FaEnvelope className="w-6 h-6 text-[#facc15]" />
                   </div>
                   <div>
                     <p className="text-sm font-medium text-slate-400">Email</p>
                     <a
                       href="mailto:daffanr20@gmail.com"
-                      className="text-lg text-white hover:text-[#55e6a5] transition-colors duration-200"
+                      className="text-lg text-white hover:text-[#facc15] transition-colors duration-200"
                     >
                       daffanr20@gmail.com
                     </a>
