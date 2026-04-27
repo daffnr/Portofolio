@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { Bars3Icon } from '@heroicons/react/20/solid'
 import React, { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
