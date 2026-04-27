@@ -5,9 +5,10 @@ import { useRouter } from 'next/router'
 
 interface Props {
     openNav: () => void;
+    nav: boolean;
 }
 
-const Nav = ({openNav}:Props) => {
+const Nav = ({openNav, nav}:Props) => {
     const router = useRouter()
     const [scrolled, setScrolled] = useState(false);
 
@@ -30,7 +31,8 @@ const Nav = ({openNav}:Props) => {
 
   return (
     <div 
-        className={`fixed z-[10000] top-0 left-0 right-0 md:left-1/2 md:-translate-x-1/2 md:w-[85%] lg:w-[900px] transition-all duration-500 flex items-center px-6 md:px-10 h-[10vh] md:h-[80px] md:rounded-full
+        className={`fixed z-[10000] top-0 left-0 right-0 md:left-1/2 md:-translate-x-1/2 md:w-[85%] lg:w-[900px] transition-all duration-500 flex items-center px-6 md:px-10 h-[8vh] md:h-[65px] md:rounded-full
+        ${nav ? 'opacity-0 pointer-events-none' : 'opacity-100'}
         ${scrolled 
             ? 'bg-black/40 backdrop-blur-md border-b md:border border-white/10 shadow-2xl md:top-4' 
             : 'bg-transparent md:bg-[#141c27]/80 md:backdrop-blur-sm md:top-6'}`}

@@ -43,7 +43,7 @@ const HomeTemplate = () => {
     <div className="overflow-x-hidden">
       <div>
         <MobileNav nav={nav} closeNav={closeNav} />
-        <Nav openNav={openNav} />
+        <Nav openNav={openNav} nav={nav} />
         <div className="bg-black h-full">
           <Hero id="home" />
           <div className="relative z-[30]">

@@ -47,16 +47,10 @@ const MobileNav = ({ nav, closeNav }: Props) => {
         }`}
       >
         {/* Header Drawer */}
-        <div className="flex items-center justify-between px-8 py-8 border-b border-white/5">
+        <div className="flex items-center justify-between px-8 py-5 border-b border-white/5">
           <div className="text-[20px] font-bold text-white tracking-widest">
             DNR<span className="text-[#facc15]">.</span>
           </div>
-          <button
-            onClick={closeNav}
-            className="p-2 rounded-full bg-white/5 hover:bg-white/10 text-white/70 hover:text-white transition-all active:scale-90"
-          >
-            <XMarkIcon className="w-6 h-6" />
-          </button>
         </div>
 
         {/* Menu Links */}
