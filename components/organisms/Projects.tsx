@@ -1,11 +1,11 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
-import Modal from "./ui/modal";
+import { BentoGrid, BentoGridItem } from "@/components/molecules/bento-grid";
+import Modal from "@/components/molecules/modal";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
-import FadeInWrapper from "./FadeInWrapper";
+import FadeInWrapper from "@/components/molecules/FadeInWrapper";
 
 interface Project {
   title: string;

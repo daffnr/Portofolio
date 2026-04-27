@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
 import React from "react";
-import FadeInWrapper from "./FadeInWrapper";
+import FadeInWrapper from "@/components/molecules/FadeInWrapper";
 
 const About = React.memo(({ id }: any) => {
   return (

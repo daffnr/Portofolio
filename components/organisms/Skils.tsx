@@ -1,5 +1,5 @@
 import React from "react";
-import FadeInWrapper from "./FadeInWrapper";
+import FadeInWrapper from "@/components/molecules/FadeInWrapper";
 
 const Skils = ({ id }: any) => {
   

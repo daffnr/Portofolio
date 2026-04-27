@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
-import Particle from "./Particle";
-import TextEffect from "./TextEffect";
+import Particle from "@/components/atoms/Particle";
+import TextEffect from "@/components/molecules/TextEffect";
 import Image from "next/image";
 
 const Hero = ({ id }: any) => {
