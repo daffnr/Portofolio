@@ -5,7 +5,7 @@ import FadeInWrapper from "@/components/molecules/FadeInWrapper";
 
 const About = React.memo(({ id }: any) => {
   return (
-    <div id={id} className="bg-[#121121] pb-[4rem] pt-[4rem] md:pt-[8rem]">
+    <div id={id} className="bg-[#121121] pb-[4rem] pt-[12vh] md:pt-[120px]">
       <div className="grid grid-cols-1 md:grid-cols-2 w-[80%] mx-auto gap-[3rem] items-center">
         <FadeInWrapper direction="left" delay={100} duration={800}>
           <div>
@@ -37,17 +37,19 @@ const About = React.memo(({ id }: any) => {
         </FadeInWrapper>
         
         <FadeInWrapper direction="right" delay={200} duration={800}>
-          <div className="lg:w-[500px] mx-auto md:mx-0 mt-[2rem] lg:mt-0 lg:h-[500px] w-[300px] h-[300px] relative">
-            <Image
-              src="/images/Daffa5.jpeg"
-              alt="user"
-              fill
-              style={{ objectFit: 'contain' }}
-              className="relative z-[11]"
-              loading="lazy"
-              priority={false}
-            />
-            <div className="absolute w-[63%] h-[100%] z-[10] bg-white top-[1.2rem] right-[4.5rem]"></div>
+          <div className="relative mx-auto lg:mx-0 flex items-center justify-center w-[300px] h-[400px] md:w-[400px] md:h-[520px] lg:w-[450px] lg:h-[580px]">
+            <div className="absolute inset-0 bg-yellow-400/5 rounded-full blur-3xl" />
+            <div className="relative w-[90%] h-[90%] rounded-2xl overflow-hidden border-2 border-yellow-400/20 shadow-2xl">
+              <Image
+                src="/images/foto_profesional.jpeg"
+                alt="Daffa"
+                fill
+                style={{ objectFit: 'cover', objectPosition: 'top' }}
+                className="relative z-[11] hover:scale-105 transition-transform duration-500"
+                loading="lazy"
+                priority={false}
+              />
+            </div>
           </div>
         </FadeInWrapper>
       </div>

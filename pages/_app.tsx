@@ -3,7 +3,12 @@ import type { AppProps } from "next/app";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import Layout from '@/components/templates/Layout';
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+  return (
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
+  );
 }

@@ -1,6 +1,7 @@
 import { EnvelopeIcon } from "@heroicons/react/20/solid";
 import { FaGithub, FaLinkedin, FaInstagram, FaArrowUp } from "react-icons/fa";
 import React, { useState, useEffect, useCallback } from "react";
+import Link from "next/link";
 
 const Footer = React.memo(({ id }: any) => {
   const [showScrollTop, setShowScrollTop] = useState(false);
@@ -48,30 +49,30 @@ const Footer = React.memo(({ id }: any) => {
             </div>
 
             <div className="flex justify-center space-x-8">
-              <a 
-                href="#home" 
+              <Link 
+                href="/" 
                 className="text-gray-300 hover:text-[#f3f04a] transition-colors duration-300 font-medium"
               >
                 Home
-              </a>
-              <a 
-                href="#project" 
+              </Link>
+              <Link 
+                href="/services#project" 
                 className="text-gray-300 hover:text-[#f3f04a] transition-colors duration-300 font-medium"
               >
                 Projects
-              </a>
-              <a 
-                href="#about" 
+              </Link>
+              <Link 
+                href="/about" 
                 className="text-gray-300 hover:text-[#f3f04a] transition-colors duration-300 font-medium"
               >
                 About
-              </a>
-              <a 
-                href="#contact" 
+              </Link>
+              <Link 
+                href="/contact" 
                 className="text-gray-300 hover:text-[#f3f04a] transition-colors duration-300 font-medium"
               >
                 Contact
-              </a>
+              </Link>
             </div>
 
             <div className="flex justify-center lg:justify-end space-x-6">
@@ -119,30 +120,30 @@ const Footer = React.memo(({ id }: any) => {
             </div>
 
             <div className="flex justify-center space-x-6">
-              <a 
-                href="#home" 
+              <Link 
+                href="/" 
                 className="text-gray-300 hover:text-[#f3f04a] transition-colors duration-300 font-medium"
               >
                 Home
-              </a>
-              <a 
-                href="#project" 
+              </Link>
+              <Link 
+                href="/services#project" 
                 className="text-gray-300 hover:text-[#f3f04a] transition-colors duration-300 font-medium"
               >
                 Projects
-              </a>
-              <a 
-                href="#about" 
+              </Link>
+              <Link 
+                href="/about" 
                 className="text-gray-300 hover:text-[#f3f04a] transition-colors duration-300 font-medium"
               >
                 About
-              </a>
-              <a 
-                href="#contact" 
+              </Link>
+              <Link 
+                href="/contact" 
                 className="text-gray-300 hover:text-[#f3f04a] transition-colors duration-300 font-medium"
               >
                 Contact
-              </a>
+              </Link>
             </div>
 
             <div className="flex justify-center space-x-6">

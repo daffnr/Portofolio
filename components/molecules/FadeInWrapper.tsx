@@ -95,7 +95,7 @@ const FadeInWrapper: React.FC<FadeInWrapperProps> = ({
       data-visible={isVisible}
     >
       <div
-        className={`transform transition-all ease-out ${
+        className={`transform transition-all ease-out ${className.includes('h-full') ? 'h-full' : ''} ${
           isVisible
             ? `opacity-100 ${getVisibleTransformClass()}`
             : `opacity-0 ${getTransformClass()}`

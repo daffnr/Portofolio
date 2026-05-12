@@ -22,19 +22,19 @@ const MobileNav = ({ nav, closeNav }: Props) => {
   };
 
   const navLinks = [
-    { name: "Home", path: "#home" },
-    { name: "About", path: "#about" },
-    { name: "Services", path: "#services" },
-    { name: "Skills", path: "#skills" },
-    { name: "Projects", path: "#project" },
-    { name: "Contact", path: "#contact" },
+    { name: "Home", path: "/" },
+    { name: "About", path: "/about" },
+    { name: "Skills", path: "/about#skills" },
+    { name: "Services", path: "/services" },
+    { name: "Projects", path: "/services#project" },
+    { name: "Contact", path: "/contact" },
   ];
 
   return (
     <>
       {/* Overlay Gelap yang bisa diklik untuk menutup */}
       <div
-        className={`fixed inset-0 bg-black/60 backdrop-blur-sm z-[9999] transition-opacity duration-500 ${
+        className={`fixed inset-0 bg-black/80 z-[9999] transition-opacity duration-500 ${
           nav ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
         }`}
         onClick={closeNav}
@@ -42,7 +42,7 @@ const MobileNav = ({ nav, closeNav }: Props) => {
 
       {/* Side Drawer Panel */}
       <div
-        className={`fixed top-0 right-0 h-[100dvh] w-[75vw] sm:w-[60vw] bg-black/20 backdrop-blur-md border-l border-white/10 z-[10000] transform transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] shadow-2xl flex flex-col ${
+        className={`fixed top-0 right-0 h-[100dvh] w-[75vw] sm:w-[60vw] bg-[#111] border-l border-white/10 z-[10000] transform transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] shadow-2xl flex flex-col ${
           nav ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -74,7 +74,7 @@ const MobileNav = ({ nav, closeNav }: Props) => {
         {/* Footer Drawer */}
         <div className="px-8 py-10">
           <button 
-              onClick={() => handleRedirect("#contact")}
+              onClick={() => handleRedirect("/contact")}
               className="w-full py-4 rounded-xl bg-gradient-to-r from-[#facc15] to-yellow-300 text-black font-bold text-[15px] hover:shadow-[0_0_20px_rgba(85,230,165,0.4)] transition-all active:scale-95"
           >
             SAY HELLO

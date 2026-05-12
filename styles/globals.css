@@ -4,6 +4,16 @@
 
 html {
   scroll-behavior: smooth;
+  overscroll-behavior: none !important;
+}
+
+body {
+  @apply bg-black;
+  overscroll-behavior: none !important;
+}
+
+#__next {
+  overscroll-behavior: none !important;
 }
 
 * {

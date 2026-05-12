@@ -89,7 +89,7 @@ const ContactSection = ({ id }: { id?: string }) => {
   };
 
   return (
-    <section id={id} className="py-16 md:py-24 bg-[#121121]">
+    <section id={id} className="pt-[12vh] md:pt-[120px] pb-16 md:pb-24 bg-[#121121]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

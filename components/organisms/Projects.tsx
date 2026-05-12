@@ -102,7 +102,7 @@ const Projects: React.FC<{ id?: string }> = ({ id }) => {
   }, []);
 
   return (
-    <div id={id} className="pt-[4rem] md:pt-[8rem] pb-[8rem] px-4">
+    <div id={id} className="pt-[12vh] md:pt-[120px] pb-[8rem] px-4">
       <FadeInWrapper direction="up" delay={100} duration={600}>
         <h1 className="heading mb-10">
           Pro<span className="text-yellow-400">ject</span>

@@ -63,7 +63,7 @@ const Skils = ({ id }: any) => {
   ];
 
   return (
-    <div id={id} className="pt-[4rem] md:pt-[8rem] pb-[4rem] bg-[#09101a]">
+    <div id={id} className="pt-[12vh] md:pt-[120px] pb-[4rem] bg-[#09101a]">
       <FadeInWrapper direction="up" delay={100} duration={600}>
         <h1 className="heading">
           <span>Tech&nbsp;</span>
