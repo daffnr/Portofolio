@@ -8,10 +8,10 @@ const FinalCTA = () => {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         <FadeInWrapper direction="up" delay={100} duration={800}>
           <h2 className="text-4xl md:text-6xl font-bold text-white mb-8 tracking-tight">
-            Let's build something <span className="text-yellow-400">together</span>
+            Let&apos;s build something <span className="text-yellow-400">together</span>
           </h2>
           <p className="text-slate-400 text-lg md:text-xl mb-12 max-w-2xl mx-auto">
-            Ready to bring your ideas to life? Whether you have a specific project in mind or just want to chat about tech, I'm always open to new opportunities.
+            Ready to bring your ideas to life? Whether you have a specific project in mind or just want to chat about tech, I&apos;m always open to new opportunities.
           </p>
           <Link 
             href="/contact"
