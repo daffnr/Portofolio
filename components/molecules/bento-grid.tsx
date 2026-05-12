@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import { cn } from "@/lib/utils";
 
@@ -28,6 +29,7 @@ interface BentoGridItemProps {
   description?: string | React.ReactNode;
   image?: string;
   link?: string;
+  priority?: boolean;
   onPreview?: () => void;
 }
 
@@ -37,6 +39,7 @@ export const BentoGridItem: React.FC<BentoGridItemProps> = ({
   description,
   image,
   link,
+  priority,
   onPreview,
 }) => {
   return (
@@ -47,11 +50,14 @@ export const BentoGridItem: React.FC<BentoGridItemProps> = ({
       )}
     >
       {image && (
-        <div className="flex-shrink-0 mb-3">
-          <img
+        <div className="relative w-full h-[180px] md:h-[200px] mb-3 flex-shrink-0">
+          <Image
             src={image}
             alt={title as string}
-            className="w-full h-[180px] md:h-[200px] object-cover rounded-md"
+            fill
+            className="object-cover rounded-md"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 25vw"
+            priority={priority}
           />
         </div>
       )}

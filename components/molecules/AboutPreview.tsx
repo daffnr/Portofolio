@@ -4,7 +4,7 @@ import FadeInWrapper from "@/components/molecules/FadeInWrapper";
 
 const AboutPreview = () => {
   return (
-    <section className="py-24 bg-[#0a0a0a]">
+    <section className="py-24 bg-[#111]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <FadeInWrapper direction="left" delay={100} duration={800}>

@@ -31,7 +31,7 @@ const Footer = React.memo(({ id }: any) => {
   }, []);
 
   return (
-    <div id={id} className="relative bg-[#02050a]">
+    <div id={id} className="relative bg-[#0a0a0a]">
       <div 
         className="pt-16 pb-8 px-4 sm:px-6 lg:px-8"
         data-aos="fade-up"
@@ -100,50 +100,36 @@ const Footer = React.memo(({ id }: any) => {
               >
                 <FaInstagram className="w-6 h-6 text-gray-300 group-hover:text-black transition-colors duration-300" />
               </a>
-              <a
-                href="mailto:daffanr20@gmail.com"
-                className="w-12 h-12 bg-gray-800 hover:bg-[#f3f04a] rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 group"
-              >
-                <EnvelopeIcon className="w-6 h-6 text-gray-300 group-hover:text-black transition-colors duration-300" />
-              </a>
             </div>
           </div>
 
-          <div className="lg:hidden space-y-8">
+          <div className="lg:hidden flex flex-col space-y-12">
             <div className="text-center">
-              <h2 className="text-2xl font-bold text-white mb-2">
+              <h2 className="text-3xl font-bold text-white mb-4">
                 Daffa Naufal Ramadhan
               </h2>
-              <p className="text-gray-400 text-sm">
+              <p className="text-gray-400">
                 Full Stack Developer
               </p>
             </div>
 
-            <div className="flex justify-center space-x-6">
-              <Link 
-                href="/" 
-                className="text-gray-300 hover:text-[#f3f04a] transition-colors duration-300 font-medium"
-              >
-                Home
-              </Link>
-              <Link 
-                href="/services#project" 
-                className="text-gray-300 hover:text-[#f3f04a] transition-colors duration-300 font-medium"
-              >
-                Projects
-              </Link>
-              <Link 
-                href="/about" 
-                className="text-gray-300 hover:text-[#f3f04a] transition-colors duration-300 font-medium"
-              >
-                About
-              </Link>
-              <Link 
-                href="/contact" 
-                className="text-gray-300 hover:text-[#f3f04a] transition-colors duration-300 font-medium"
-              >
-                Contact
-              </Link>
+            <div className="grid grid-cols-2 gap-8 text-center">
+              <div className="space-y-4">
+                <h3 className="text-white font-bold uppercase tracking-wider text-sm">Navigation</h3>
+                <div className="flex flex-col space-y-2">
+                  <Link href="/" className="text-gray-400 hover:text-[#f3f04a] transition-colors">Home</Link>
+                  <Link href="/services#project" className="text-gray-400 hover:text-[#f3f04a] transition-colors">Projects</Link>
+                  <Link href="/about" className="text-gray-400 hover:text-[#f3f04a] transition-colors">About</Link>
+                </div>
+              </div>
+              <div className="space-y-4">
+                <h3 className="text-white font-bold uppercase tracking-wider text-sm">Connect</h3>
+                <div className="flex flex-col space-y-2">
+                  <a href="https://github.com/daffnr" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#f3f04a] transition-colors">GitHub</a>
+                  <a href="https://www.linkedin.com/in/daffa-naufal/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#f3f04a] transition-colors">LinkedIn</a>
+                  <a href="mailto:daffanr20@gmail.com" className="text-gray-400 hover:text-[#f3f04a] transition-colors">Email</a>
+                </div>
+              </div>
             </div>
 
             <div className="flex justify-center space-x-6">
@@ -183,7 +169,7 @@ const Footer = React.memo(({ id }: any) => {
           <div className="border-t border-gray-700 mt-12 pt-8">
             <div className="text-center">
               <p className="text-gray-400 text-sm">
-                © 2025 Daffa Naufal Ramadhan. All Rights Reserved.
+                © 2026 Daffa Naufal Ramadhan. All Rights Reserved.
               </p>
             </div>
           </div>

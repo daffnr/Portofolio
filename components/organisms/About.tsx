@@ -5,7 +5,7 @@ import FadeInWrapper from "@/components/molecules/FadeInWrapper";
 
 const About = React.memo(({ id }: any) => {
   return (
-    <div id={id} className="bg-[#121121] pb-[4rem] pt-[12vh] md:pt-[120px]">
+    <div id={id} className="bg-[#111] pb-[4rem] pt-[12vh] md:pt-[120px]">
       <div className="grid grid-cols-1 md:grid-cols-2 w-[80%] mx-auto gap-[3rem] items-center">
         <FadeInWrapper direction="left" delay={100} duration={800}>
           <div>

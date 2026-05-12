@@ -29,7 +29,7 @@ const Certifications = ({ id }: { id?: string }) => {
   ];
 
   return (
-    <section id={id} className="py-20 bg-[#09101a]">
+    <section id={id} className="py-20 bg-[#111]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <FadeInWrapper direction="up" delay={100} duration={600}>
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-12 text-center">

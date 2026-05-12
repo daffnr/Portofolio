@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import FadeInWrapper from "@/components/molecules/FadeInWrapper";
 
@@ -63,7 +64,7 @@ const Skils = ({ id }: any) => {
   ];
 
   return (
-    <div id={id} className="pt-[12vh] md:pt-[120px] pb-[4rem] bg-[#09101a]">
+    <div id={id} className="pt-[12vh] md:pt-[120px] pb-[4rem] bg-[#111]">
       <FadeInWrapper direction="up" delay={100} duration={600}>
         <h1 className="heading">
           <span>Tech&nbsp;</span>
@@ -81,7 +82,9 @@ const Skils = ({ id }: any) => {
               duration={500}
             >
               <div className="p-4 bg-[#424c5f] rounded-lg text-center text-white hover:bg-[#d8ce3c] transition-all duration-300 flex flex-col items-center justify-center">
-                <img src={tech.logo} alt={tech.name} className="w-12 h-12 mb-2" />
+                <div className="relative w-12 h-12 mb-2">
+                  <Image src={tech.logo} alt={tech.name} fill className="object-contain" />
+                </div>
                 <h3 className="text-lg font-semibold">{tech.name}</h3>
               </div>
             </FadeInWrapper>
@@ -107,7 +110,9 @@ const Skils = ({ id }: any) => {
               duration={500}
             >
               <div className="p-4 bg-[#424c5f] rounded-lg text-center text-white hover:bg-[#d8ce3c] transition-all duration-300 flex flex-col items-center justify-center">
-                <img src={tool.logo} alt={tool.name} className="w-12 h-12 mb-2" />
+                <div className="relative w-12 h-12 mb-2">
+                  <Image src={tool.logo} alt={tool.name} fill className="object-contain" />
+                </div>
                 <h3 className="text-lg font-semibold">{tool.name}</h3>
               </div>
             </FadeInWrapper>
