@@ -1,30 +1,67 @@
-import React from "react";
+"use client";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { BentoGrid, BentoGridItem } from "@/components/molecules/bento-grid";
 import FadeInWrapper from "@/components/molecules/FadeInWrapper";
+import Modal from "@/components/molecules/modal";
+import { ProjectModalContent, ProjectData } from "@/components/molecules/ProjectModalContent";
 
 const FeaturedProjects = () => {
-  const featuredItems = [
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedProject, setSelectedProject] = useState<ProjectData | null>(null);
+
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setIsOpen(false);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, []);
+  const featuredItems: ProjectData[] = [
     {
       title: "ngoCare Medical Supplies",
       description:
         "A modern company profile and semi e-commerce website for a medical equipment business.",
       image: "/images/ngoCare1.png",
-      link: "https://ngo-care-solutions.vercel.app/",
+      liveUrl: "https://ngo-care-solutions.vercel.app/",
+      githubUrl: "https://github.com/daffnr",
+      techStack: ["Next.js", "React", "Framer Motion"],
+      previewImages: [
+        "/images/ngoCare2.png",
+        "/images/ngoCare3.png",
+        "/images/ngoCare4.png",
+        "/images/ngoCare4.png",
+      ],
     },
     {
       title: "Netflix Clone",
       description:
         "A Netflix-inspired movie streaming platform with Firebase authentication and TMDB API integration.",
       image: "/images/netflixClone.png",
-      link: "https://netflix-clone-pink-mu.vercel.app/",
+      liveUrl: "https://netflix-clone-pink-mu.vercel.app/",
+      githubUrl: "https://github.com/daffnr",
+      techStack: ["React", "Firebase", "React Router"],
+      previewImages: [
+        "/images/ssNetflix1.png",
+        "/images/ssNetflix2.png",
+        "/images/ssNetflix3.png",
+      ],
     },
     {
-      title: "SIMPS PPOB",
+      title: "SIMS PPOB",
       description:
         "SIMS PPOB is an online platform that allows users to pay bills and manage their transactions easily.",
       image: "/images/ssSimsppob1.png",
-      link: "https://sims-ppob-daffa-naufal-ramadhan.vercel.app/",
+      liveUrl: "https://sims-ppob-daffa-naufal-ramadhan.vercel.app/",
+      githubUrl: "https://github.com/daffnr",
+      techStack: ["React", "Redux Toolkit", "React Router", "Styled Components"],
+      previewImages: [
+        "/images/ssSimsppob2.png",
+        "/images/ssSimsppob1.png",
+        "/images/ssSimsppob3.png",
+        "/images/ssSimsppob4.png",
+        "/images/ssSimsppob5.png",
+      ],
     },
   ];
 
@@ -62,12 +99,20 @@ const FeaturedProjects = () => {
                 title={item.title}
                 description={item.description}
                 image={item.image}
-                link={item.link}
-                className="bg-[#111] border-neutral-800"
+                techStack={item.techStack}
+                onOpenDetails={() => {
+                  setSelectedProject(item);
+                  setIsOpen(true);
+                }}
+                className="bg-[#0a0a0a] border-white/5"
               />
             </FadeInWrapper>
           ))}
         </BentoGrid>
+
+        <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
+          {selectedProject && <ProjectModalContent project={selectedProject} />}
+        </Modal>
       </div>
     </section>
   );

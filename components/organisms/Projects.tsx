@@ -3,26 +3,28 @@ import React from "react";
 import Image from "next/image";
 import { BentoGrid, BentoGridItem } from "@/components/molecules/bento-grid";
 import Modal from "@/components/molecules/modal";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
+import { ProjectModalContent, ProjectData } from "@/components/molecules/ProjectModalContent";
 import FadeInWrapper from "@/components/molecules/FadeInWrapper";
 
-interface Project {
-  title: string;
-  description: string;
-  image: string;
-  link: string;
-  previewImages: string[];
-}
-
 const Projects: React.FC<{ id?: string }> = ({ id }) => {
-  const items: Project[] = [
+  const items: ProjectData[] = [
+    {
+      title: "Portfolio Website",
+      description: "My personal portfolio website designed with a modern and premium aesthetic.",
+      image: "/images/foto_profesional.jpeg",
+      liveUrl: "https://daffnr.vercel.app/",
+      githubUrl: "https://github.com/daffnr/Portofolio",
+      techStack: ["Next.js", "React", "Tailwind CSS", "Framer Motion", "EmailJS"],
+      previewImages: [],
+    },
     {
       title: "ngoCare Medical Supplies",
       description:
         "A modern company profile and semi e-commerce website for a medical equipment business.",
       image: "/images/ngoCare1.png",
-      link: "https://ngo-care-solutions.vercel.app/",
+      liveUrl: "https://ngo-care-solutions.vercel.app/",
+      githubUrl: "https://github.com/daffnr",
+      techStack: ["Next.js", "React", "Framer Motion"],
       previewImages: [
         "/images/ngoCare2.png",
         "/images/ngoCare3.png",
@@ -30,12 +32,13 @@ const Projects: React.FC<{ id?: string }> = ({ id }) => {
         "/images/ngoCare4.png",
       ],
     },
-
     {
       title: "Contact App",
       description: "Manage and organize your contacts easily with this app.",
       image: "/images/contactApp.png",
-      link: "https://my-contact-app-kappa.vercel.app/",
+      liveUrl: "https://my-contact-app-kappa.vercel.app/",
+      githubUrl: "https://github.com/daffnr",
+      techStack: ["React", "Material UI", "Axios", "React Router"],
       previewImages: ["/images/ssContactApp1.png", "/images/ssContactApp2.png"],
     },
     {
@@ -43,7 +46,9 @@ const Projects: React.FC<{ id?: string }> = ({ id }) => {
       description:
         "A Netflix-inspired movie streaming platform with Firebase authentication and TMDB API integration.",
       image: "/images/netflixClone.png",
-      link: "https://netflix-clone-pink-mu.vercel.app/",
+      liveUrl: "https://netflix-clone-pink-mu.vercel.app/",
+      githubUrl: "https://github.com/daffnr",
+      techStack: ["React", "Firebase", "React Router"],
       previewImages: [
         "/images/ssNetflix1.png",
         "/images/ssNetflix2.png",
@@ -55,7 +60,9 @@ const Projects: React.FC<{ id?: string }> = ({ id }) => {
       description:
         "Cermind is a mobile quiz game designed to train concentration and quick thinking.",
       image: "/images/ssCermind2.png",
-      link: "https://drive.google.com/file/d/1JiLFaEAb8TTPKoAIqyNJMoSJiEAvIv_v/view?usp=drive_link",
+      liveUrl: "https://drive.google.com/file/d/1JiLFaEAb8TTPKoAIqyNJMoSJiEAvIv_v/view?usp=drive_link",
+      githubUrl: "https://github.com/daffnr",
+      techStack: ["React Native", "Expo", "React Navigation", "Reanimated"],
       previewImages: [
         "/images/ssCermind1.png",
         "/images/ssCermind2.png",
@@ -71,15 +78,19 @@ const Projects: React.FC<{ id?: string }> = ({ id }) => {
       description:
         "A clean and responsive mobile news application built with React Native and Expo. Browse the latest headlines, read full articles, and explore detailed news screens in a smooth native experience.",
       image: "/images/newsApp.png",
-      link: "https://drive.google.com/file/d/1QobBGOPB1XhnAGyh_77hW78bMxQzI6An/view?usp=drive_link",
+      liveUrl: "https://drive.google.com/file/d/1QobBGOPB1XhnAGyh_77hW78bMxQzI6An/view?usp=drive_link",
+      githubUrl: "https://github.com/daffnr",
+      techStack: ["React Native", "Expo", "React Navigation", "Axios"],
       previewImages: ["/images/ssNewsApp1.png", "/images/ssNewsApp2.png"],
     },
     {
-      title: "SIMPS PPOB",
+      title: "SIMS PPOB",
       description:
         "SIMS PPOB is an online platform that allows users to pay bills and manage their transactions easily.",
       image: "/images/ssSimsppob1.png",
-      link: "https://sims-ppob-daffa-naufal-ramadhan.vercel.app/",
+      liveUrl: "https://sims-ppob-daffa-naufal-ramadhan.vercel.app/",
+      githubUrl: "https://github.com/daffnr",
+      techStack: ["React", "Redux Toolkit", "React Router", "Styled Components"],
       previewImages: [
         "/images/ssSimsppob2.png",
         "/images/ssSimsppob1.png",
@@ -91,7 +102,7 @@ const Projects: React.FC<{ id?: string }> = ({ id }) => {
   ];
 
   const [isOpen, setIsOpen] = React.useState(false);
-  const [selectedImages, setSelectedImages] = React.useState<string[]>([]);
+  const [selectedProject, setSelectedProject] = React.useState<ProjectData | null>(null);
 
   React.useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -122,12 +133,12 @@ const Projects: React.FC<{ id?: string }> = ({ id }) => {
                 title={item.title}
                 description={item.description}
                 image={item.image}
-                link={item.link}
-                onPreview={() => {
-                  setSelectedImages(item.previewImages);
+                techStack={item.techStack}
+                onOpenDetails={() => {
+                  setSelectedProject(item);
                   setIsOpen(true);
                 }}
-                className="cursor-default"
+                className="bg-[#0a0a0a] border-white/5"
               />
             </FadeInWrapper>
           ))}
@@ -135,29 +146,7 @@ const Projects: React.FC<{ id?: string }> = ({ id }) => {
       </FadeInWrapper>
 
       <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
-        <Swiper
-          modules={[Navigation, Pagination]}
-          navigation
-          pagination={{ clickable: true }}
-          spaceBetween={20}
-          slidesPerView={1}
-          className="rounded-md"
-        >
-          {selectedImages.map((src, idx) => (
-            <SwiperSlide key={idx}>
-              <div className="flex items-center justify-center w-full h-[60vh]">
-                <Image
-                  src={src}
-                  alt={`Preview ${idx}`}
-                  width={800}
-                  height={600}
-                  className="max-h-[60vh] w-auto object-contain rounded"
-                  loading="lazy"
-                />
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+        {selectedProject && <ProjectModalContent project={selectedProject} />}
       </Modal>
     </div>
   );

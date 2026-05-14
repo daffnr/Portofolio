@@ -116,7 +116,6 @@ const ContactSection = ({ id }: { id?: string }) => {
           <motion.div variants={itemVariants} className="order-2 lg:order-1">
             <div className="bg-gray-800 rounded-2xl shadow-lg p-8 md:p-10 border border-gray-700">
               <h3 className="text-2xl font-bold text-white mb-6">Send me a message</h3>
-              
               <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label htmlFor="from_name" className="block text-sm font-medium text-slate-300 mb-2">

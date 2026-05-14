@@ -23,8 +23,6 @@ const Hero = ({ id }: { id?: string }) => {
     >
       <Particle />
       
-      {/* Background elements removed for cleaner look */}
-      
       <div className="w-[85%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-20">
         <motion.div 
           initial={{ opacity: 0, x: -20 }}
@@ -55,18 +53,15 @@ const Hero = ({ id }: { id?: string }) => {
           </div>
         </motion.div>
 
-        {/* Right Column: Abstract Glowing Core + Orbiting Tech Stack */}
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
           className="relative flex justify-center items-center h-[350px] lg:h-[500px] w-full pointer-events-none mt-10 lg:mt-0"
         >
-          {/* Subtle Orbit Ring Backgrounds */}
           <div className="absolute w-[280px] h-[280px] lg:w-[440px] lg:h-[440px] rounded-full border border-white/5 shadow-[inset_0_0_50px_rgba(255,255,255,0.02)]" />
           <div className="absolute w-[180px] h-[180px] lg:w-[300px] lg:h-[300px] rounded-full border border-yellow-400/10 shadow-[0_0_60px_rgba(250,204,21,0.05)]" />
 
-          {/* Central Glowing Core (Replaces Photo) */}
           <div className="relative flex items-center justify-center z-10 pointer-events-auto group">
             <div className="absolute w-[100px] h-[100px] lg:w-[150px] lg:h-[150px] bg-yellow-400/20 rounded-full blur-[40px] group-hover:bg-yellow-400/30 transition-colors duration-700" />
             <div className="w-[60px] h-[60px] lg:w-[80px] lg:h-[80px] rounded-full border border-yellow-400/30 bg-black/50 backdrop-blur-md flex items-center justify-center shadow-[0_0_30px_rgba(250,204,21,0.2)]">
@@ -74,7 +69,6 @@ const Hero = ({ id }: { id?: string }) => {
             </div>
           </div>
 
-          {/* Orbiting Icons */}
           <motion.div
             animate={{ rotate: 360 }}
             transition={{ repeat: Infinity, duration: 40, ease: "linear" }}

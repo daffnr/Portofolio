@@ -13,7 +13,6 @@ const Services = ({ id }: any) => {
         MY <span className="text-yellow-400">Services</span>
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-[85%] mx-auto items-stretch gap-8 mt-[4rem] text-white">
-        {/* Frontend */}
         <div className="bg-emerald-700/80 rounded-[3rem] hover:scale-105 transform transition-all duration-300 flex flex-col items-center text-center p-8 border border-white/10">
           <CodeBracketSquareIcon className="w-16 h-16 text-emerald-200 mb-6" />
           <h1 className="text-2xl font-bold mb-4 uppercase tracking-wider">
@@ -27,7 +26,6 @@ const Services = ({ id }: any) => {
           </p>
         </div>
 
-        {/* Backend */}
         <div className="bg-orange-700/80 rounded-[3rem] hover:scale-105 transform transition-all duration-300 flex flex-col items-center text-center p-8 border border-white/10">
           <RocketLaunchIcon className="w-16 h-16 text-orange-200 mb-6" />
           <h1 className="text-2xl font-bold mb-4 uppercase tracking-wider">
@@ -41,7 +39,6 @@ const Services = ({ id }: any) => {
           </p>
         </div>
 
-        {/* Mobile */}
         <div className="bg-purple-700/80 rounded-[3rem] hover:scale-105 transform transition-all duration-300 flex flex-col items-center text-center p-8 border border-white/10">
           <DevicePhoneMobileIcon className="w-16 h-16 text-purple-200 mb-6" />
           <h1 className="text-2xl font-bold mb-4 uppercase tracking-wider">
@@ -54,7 +51,6 @@ const Services = ({ id }: any) => {
           </p>
         </div>
 
-        {/* Fullstack */}
         <div className="bg-blue-700/80 rounded-[3rem] hover:scale-105 transform transition-all duration-300 flex flex-col items-center text-center p-8 border border-white/10">
           <CommandLineIcon className="w-16 h-16 text-blue-200 mb-6" />
           <h1 className="text-2xl font-bold mb-4 uppercase tracking-wider">
