@@ -14,8 +14,7 @@ const AboutPreview = () => {
                 Passion for <span className="text-yellow-400">Innovation</span> & Problem Solving
               </h2>
               <p className="text-slate-300 text-lg md:text-xl leading-relaxed mb-8 max-w-xl">
-                My transition from Agriculture to Web Development has taught me the importance of adaptability and a growth mindset. 
-                I am passionate about creating efficient and scalable solutions, leveraging the latest technologies like Next.js and Node.js to deliver high-quality results.
+               Passionate about building modern web applications with a focus on scalability, performance, and user experience.
               </p>
               <Link 
                 href="/about"

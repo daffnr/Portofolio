@@ -12,7 +12,7 @@ const Certifications = ({ id }: { id?: string }) => {
       title: "Full Stack Web Development",
       issuer: "Purwadhika Digital Technology School",
       year: "2024",
-      image: "/images/cert_placeholder.png", // Ganti dengan path gambar sertifikat Anda
+      image: "/images/cert_placeholder.png",
     },
     {
       title: "Next.js & Modern Web Architecture",
@@ -29,7 +29,7 @@ const Certifications = ({ id }: { id?: string }) => {
   ];
 
   return (
-    <section id={id} className="py-20 bg-[#111]">
+    <section id={id} className="py-20 bg-black">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <FadeInWrapper direction="up" delay={100} duration={600}>
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-12 text-center">
@@ -37,7 +37,7 @@ const Certifications = ({ id }: { id?: string }) => {
           </h2>
         </FadeInWrapper>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 pt-[12vh]">
           {certs.map((cert, i) => (
             <FadeInWrapper 
               key={i}

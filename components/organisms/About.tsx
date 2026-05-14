@@ -5,7 +5,7 @@ import FadeInWrapper from "@/components/molecules/FadeInWrapper";
 
 const About = React.memo(({ id }: any) => {
   return (
-    <div id={id} className="bg-[#111] pb-[4rem] pt-[12vh] md:pt-[120px]">
+    <div id={id} className="bg-black pb-[4rem] pt-[12vh] md:pt-[120px]">
       <div className="grid grid-cols-1 md:grid-cols-2 w-[80%] mx-auto gap-[3rem] items-center">
         <FadeInWrapper direction="left" delay={100} duration={800}>
           <div>
@@ -18,19 +18,7 @@ const About = React.memo(({ id }: any) => {
             <div className="mb-[3rem] flex items-center md:space-x-10">
               <span className="w-[100px] hidden md:block h-[5px] bg-slate-400 rounded-sm"></span>
               <p className="text-[19px] text-slate-300 w-[80%]">
-                My transition from Agriculture to Web Development has taught me
-                the importance of adaptability and a growth mindset. After
-                graduating from Universitas Jenderal Soedirman, I joined
-                Purwadhika's Full Stack Web Development bootcamp, where I
-                completed multiple projects and honed my skills in React.js,
-                Next.js, Tailwind CSS, Express.js, MySQL, and RESTful APIs.
-                Additionally, I gained hands-on experience with Docker for
-                containerization and GitHub for version control and collaborative
-                development. These experiences have equipped me to build modern,
-                user-centric web applications while continuously learning and
-                adapting to new challenges. I'm passionate about creating
-                efficient and scalable solutions, and I enjoy leveraging the
-                latest technologies to deliver high-quality results.
+                I’m a fullstack developer passionate about building modern, scalable, and user-centered digital experiences. My experience includes developing web applications using React, Next.js, Tailwind CSS, Express.js, MySQL, and RESTful APIs, along with mobile application development using React Native. I enjoy turning ideas into clean, responsive, and functional products while continuously exploring new technologies and development practices. Familiar with tools like Docker and GitHub, I focus on creating applications that are efficient, maintainable, and visually engaging.
               </p>
             </div>
           </div>

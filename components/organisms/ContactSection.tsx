@@ -89,7 +89,7 @@ const ContactSection = ({ id }: { id?: string }) => {
   };
 
   return (
-    <section id={id} className="pt-[12vh] md:pt-[120px] pb-16 md:pb-24 bg-[#121121]">
+    <section id={id} className="pt-[12vh] md:pt-[120px] pb-16 md:pb-24 bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -220,7 +220,7 @@ const ContactSection = ({ id }: { id?: string }) => {
                   </div>
                   <div>
                     <p className="text-sm font-medium text-slate-400">Location</p>
-                    <p className="text-lg text-white">Jakarta, Indonesia</p>
+                    <p className="text-lg text-white">Bekasi, Indonesia</p>
                   </div>
                 </motion.div>
               </div>

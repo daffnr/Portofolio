@@ -8,7 +8,7 @@ import React from "react";
 
 const Services = ({ id }: any) => {
   return (
-    <div id={id} className="pt-[12vh] md:pt-[120px] pb-[4rem] bg-[#121121]">
+    <div id={id} className="pt-[12vh] md:pt-[120px] pb-[4rem] bg-[#111]">
       <p className="heading">
         MY <span className="text-yellow-400">Services</span>
       </p>

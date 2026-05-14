@@ -38,7 +38,7 @@ const FeaturedProjects = () => {
                 Featured <span className="text-yellow-400">Projects</span>
               </h2>
               <p className="text-slate-400 text-lg max-w-2xl">
-                A selection of my best work, spanning from medical supply platforms to entertainment clones.
+                A curated collection of projects showcasing modern web development, scalable architecture, and thoughtful user experiences.
               </p>
             </div>
             <Link 
