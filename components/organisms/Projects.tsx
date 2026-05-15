@@ -9,21 +9,12 @@ import FadeInWrapper from "@/components/molecules/FadeInWrapper";
 const Projects: React.FC<{ id?: string }> = ({ id }) => {
   const items: ProjectData[] = [
     {
-      title: "Portfolio Website",
-      description: "My personal portfolio website designed with a modern and premium aesthetic.",
-      image: "/images/foto_profesional.jpeg",
-      liveUrl: "https://daffnr.vercel.app/",
-      githubUrl: "https://github.com/daffnr/Portofolio",
-      techStack: ["Next.js", "React", "Tailwind CSS", "Framer Motion", "EmailJS"],
-      previewImages: [],
-    },
-    {
       title: "ngoCare Medical Supplies",
       description:
         "A modern company profile and semi e-commerce website for a medical equipment business.",
       image: "/images/ngoCare1.png",
       liveUrl: "https://ngo-care-solutions.vercel.app/",
-      githubUrl: "https://github.com/daffnr",
+      githubUrl: "https://github.com/daffnr/ngoCare-Solutions",
       techStack: ["Next.js", "React", "Framer Motion"],
       previewImages: [
         "/images/ngoCare2.png",
@@ -36,7 +27,7 @@ const Projects: React.FC<{ id?: string }> = ({ id }) => {
       title: "Contact App",
       description: "Manage and organize your contacts easily with this app.",
       image: "/images/contactApp.png",
-      liveUrl: "https://my-contact-app-kappa.vercel.app/",
+      liveUrl: "https://github.com/daffnr/my-contact-app",
       githubUrl: "https://github.com/daffnr",
       techStack: ["React", "Material UI", "Axios", "React Router"],
       previewImages: ["/images/ssContactApp1.png", "/images/ssContactApp2.png"],
@@ -47,7 +38,7 @@ const Projects: React.FC<{ id?: string }> = ({ id }) => {
         "A Netflix-inspired movie streaming platform with Firebase authentication and TMDB API integration.",
       image: "/images/netflixClone.png",
       liveUrl: "https://netflix-clone-pink-mu.vercel.app/",
-      githubUrl: "https://github.com/daffnr",
+      githubUrl: "https://github.com/daffnr/Netflix-Clone",
       techStack: ["React", "Firebase", "React Router"],
       previewImages: [
         "/images/ssNetflix1.png",
@@ -61,7 +52,7 @@ const Projects: React.FC<{ id?: string }> = ({ id }) => {
         "Cermind is a mobile quiz game designed to train concentration and quick thinking.",
       image: "/images/ssCermind2.png",
       liveUrl: "https://drive.google.com/file/d/1JiLFaEAb8TTPKoAIqyNJMoSJiEAvIv_v/view?usp=drive_link",
-      githubUrl: "https://github.com/daffnr",
+      githubUrl: "https://github.com/daffnr/Cermind",
       techStack: ["React Native", "Expo", "React Navigation", "Reanimated"],
       previewImages: [
         "/images/ssCermind1.png",
@@ -76,10 +67,10 @@ const Projects: React.FC<{ id?: string }> = ({ id }) => {
     {
       title: "NewsApp Mobile",
       description:
-        "A clean and responsive mobile news application built with React Native and Expo. Browse the latest headlines, read full articles, and explore detailed news screens in a smooth native experience.",
+        "A responsive mobile news app built with React Native and Expo for browsing headlines and reading articles.",
       image: "/images/newsApp.png",
       liveUrl: "https://drive.google.com/file/d/1QobBGOPB1XhnAGyh_77hW78bMxQzI6An/view?usp=drive_link",
-      githubUrl: "https://github.com/daffnr",
+      githubUrl: "https://github.com/daffnr/News-App",
       techStack: ["React Native", "Expo", "React Navigation", "Axios"],
       previewImages: ["/images/ssNewsApp1.png", "/images/ssNewsApp2.png"],
     },
@@ -89,7 +80,7 @@ const Projects: React.FC<{ id?: string }> = ({ id }) => {
         "SIMS PPOB is an online platform that allows users to pay bills and manage their transactions easily.",
       image: "/images/ssSimsppob1.png",
       liveUrl: "https://sims-ppob-daffa-naufal-ramadhan.vercel.app/",
-      githubUrl: "https://github.com/daffnr",
+      githubUrl: "https://github.com/daffnr/SIMS-PPOB-Daffa-Naufal-Ramadhan",
       techStack: ["React", "Redux Toolkit", "React Router", "Styled Components"],
       previewImages: [
         "/images/ssSimsppob2.png",
