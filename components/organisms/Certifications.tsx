@@ -1,30 +1,26 @@
-import React, { useState } from "react";
+import React from "react";
 import FadeInWrapper from "@/components/molecules/FadeInWrapper";
-import { FaCertificate, FaSearchPlus, FaTimes } from "react-icons/fa";
-import { motion, AnimatePresence } from "framer-motion";
-import Image from "next/image";
+import { FaCertificate, FaExternalLinkAlt } from "react-icons/fa";
 
 const Certifications = ({ id }: { id?: string }) => {
-  const [selectedImage, setSelectedImage] = useState<string | null>(null);
-
   const certs = [
     {
       title: "Full Stack Web Development",
       issuer: "Purwadhika Digital Technology School",
       year: "2024",
-      image: "/images/cert_placeholder.png",
+      link: "https://drive.google.com/file/d/14q8W6YEXJTT39jD6VRQEoqRmSZ5nHpJF/view?usp=drive_link",
     },
     {
-      title: "Next.js & Modern Web Architecture",
+      title: "Database MySql",
+      issuer: "Online Certification",
+      year: "2024",
+      link: "https://drive.google.com/file/d/1F-YO-KKCB6K2OK8_oA8JuixO7cGA8JK_/view?usp=drive_link",
+    },
+    {
+      title: "React Native",
       issuer: "Online Certification",
       year: "2025",
-      image: "/images/cert_placeholder.png",
-    },
-    {
-      title: "Backend Development with Node.js & MySQL",
-      issuer: "Professional Bootcamp",
-      year: "2024",
-      image: "/images/cert_placeholder.png",
+      link: "https://drive.google.com/file/d/15D-kuLhG4rBV2eu-OQR8dYh2PdrchbRG/view?usp=drive_link",
     }, 
   ];
 
@@ -46,9 +42,11 @@ const Certifications = ({ id }: { id?: string }) => {
               duration={600}
               className="h-full"
             >
-              <div 
-                onClick={() => setSelectedImage(cert.image)}
-                className="group relative p-5 bg-[#111] border border-white/10 rounded-3xl hover:border-yellow-400/50 transition-all duration-500 flex flex-col h-full cursor-pointer overflow-hidden shadow-2xl"
+              <a 
+                href={cert.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative p-5 bg-[#111] border border-white/10 rounded-3xl hover:border-yellow-400/50 transition-all duration-500 flex flex-col h-full cursor-pointer overflow-hidden shadow-2xl block"
               >
                 {/* Background Pattern */}
                 <div className="absolute top-0 right-0 w-32 h-32 bg-yellow-400/5 rounded-full blur-3xl -mr-16 -mt-16 group-hover:bg-yellow-400/10 transition-colors duration-500" />
@@ -73,54 +71,14 @@ const Certifications = ({ id }: { id?: string }) => {
                     {cert.year}
                   </span>
                   <div className="flex items-center text-yellow-400 font-bold text-sm group-hover:translate-x-1 transition-transform duration-500">
-                    View Cert <FaSearchPlus className="ml-2" />
+                    View Cert <FaExternalLinkAlt className="ml-2" />
                   </div>
                 </div>
-              </div>
+              </a>
             </FadeInWrapper>
           ))}
         </div>
       </div>
-
-      {/* Modal for Image Preview */}
-      <AnimatePresence>
-        {selectedImage && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            onClick={() => setSelectedImage(null)}
-            className="fixed inset-0 z-[20000] bg-black/95 flex items-center justify-center p-4 md:p-10 cursor-zoom-out"
-          >
-            <motion.button
-              initial={{ scale: 0 }}
-              animate={{ scale: 1 }}
-              className="absolute top-6 right-6 text-white text-3xl hover:text-yellow-400 transition-colors z-50"
-              onClick={() => setSelectedImage(null)}
-            >
-              <FaTimes />
-            </motion.button>
-            
-            <motion.div
-              initial={{ scale: 0.9, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.9, opacity: 0 }}
-              className="relative w-full max-w-5xl h-full flex items-center justify-center"
-              onClick={(e) => e.stopPropagation()}
-            >
-              <div className="relative w-full h-full">
-                <Image
-                  src={selectedImage}
-                  alt="Certificate"
-                  fill
-                  style={{ objectFit: 'contain' }}
-                  className="rounded-lg"
-                />
-              </div>
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
     </section>
   );
 };
