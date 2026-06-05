@@ -34,18 +34,13 @@ const FeaturedProjects = () => {
       ],
     },
     {
-      title: "Netflix Clone",
-      description:
-        "A Netflix-inspired movie streaming platform with Firebase authentication and TMDB API integration.",
-      image: "/images/netflixClone.png",
-      liveUrl: "https://netflix-clone-pink-mu.vercel.app/",
-      githubUrl: "https://github.com/daffnr",
-      techStack: ["React", "Firebase", "React Router"],
-      previewImages: [
-        "/images/ssNetflix1.png",
-        "/images/ssNetflix2.png",
-        "/images/ssNetflix3.png",
-      ],
+      title: "ContactHub CRM",
+      description: "SaaS-inspired CRM dashboard for managing contacts, relationships, and business networks.",
+      image: "/images/heroCH.png",
+      liveUrl: "https://contact-hub-kohl.vercel.app/",
+      githubUrl: "https://github.com/daffnr/ContactHub",
+      techStack: ["React","TypeScript","Tailwind CSS","TanStack Query","Framer Motion"],
+      previewImages: ["/images/heroCH.png","/images/ch1.png", "/images/ch2.png"],
     },
     {
       title: "SIMS PPOB",

@@ -33,7 +33,7 @@ const AboutPreview = () => {
                 <p className="text-slate-400 text-sm uppercase tracking-widest font-semibold">Projects Completed</p>
               </div>
               <div className="p-8 bg-[#111] border border-white/10 rounded-3xl mt-8">
-                <h3 className="text-3xl font-bold text-yellow-400 mb-2">Fullstack</h3>
+                <h3 className="text-3xl font-bold text-yellow-400 mb-2">FRONT-END</h3>
                 <p className="text-slate-400 text-sm uppercase tracking-widest font-semibold">Specialization</p>
               </div>
             </div>
