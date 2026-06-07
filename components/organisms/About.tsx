@@ -27,12 +27,12 @@ const About = React.memo(({ id }: any) => {
         <FadeInWrapper direction="right" delay={200} duration={800}>
           <div className="relative mx-auto lg:mx-0 flex items-center justify-center w-[300px] h-[400px] md:w-[400px] md:h-[520px] lg:w-[450px] lg:h-[580px]">
             <div className="absolute inset-0 bg-yellow-400/5 rounded-full blur-3xl" />
-            <div className="relative w-[90%] h-[90%] rounded-2xl overflow-hidden border-2 border-yellow-400/20 shadow-2xl">
+            <div className="relative w-[90%] h-[90%] rounded-2xl overflow-hidden border-2 border-black shadow-2xl">
               <Image
-                src="/images/foto_profesional.jpeg"
+                src="/images/foto_profesional2.png"
                 alt="Daffa"
                 fill
-                style={{ objectFit: 'cover', objectPosition: 'top' }}
+                style={{ objectFit: 'cover', objectPosition: 'center 25%' }}
                 className="relative z-[11] hover:scale-105 transition-transform duration-500"
                 loading="lazy"
                 priority={false}
