@@ -17,6 +17,12 @@ const Certifications = ({ id }: { id?: string }) => {
       link: "https://drive.google.com/file/d/1F-YO-KKCB6K2OK8_oA8JuixO7cGA8JK_/view?usp=drive_link",
     },
     {
+      title: "UI/UX Fundamentals Training",
+      issuer: "Online Certification",
+      year: "2024",
+      link: "https://drive.google.com/file/d/1mWH6jYlxKE3zyFNNfKWKbXStSGOPkHcy/view?usp=drive_link",
+    }, 
+    {
       title: "React Native",
       issuer: "Online Certification",
       year: "2025",
