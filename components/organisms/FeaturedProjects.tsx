@@ -4,11 +4,16 @@ import Link from "next/link";
 import { BentoGrid, BentoGridItem } from "@/components/molecules/bento-grid";
 import FadeInWrapper from "@/components/molecules/FadeInWrapper";
 import Modal from "@/components/molecules/modal";
-import { ProjectModalContent, ProjectData } from "@/components/molecules/ProjectModalContent";
+import {
+  ProjectModalContent,
+  ProjectData,
+} from "@/components/molecules/ProjectModalContent";
 
 const FeaturedProjects = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [selectedProject, setSelectedProject] = useState<ProjectData | null>(null);
+  const [selectedProject, setSelectedProject] = useState<ProjectData | null>(
+    null,
+  );
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -18,6 +23,21 @@ const FeaturedProjects = () => {
     return () => window.removeEventListener("keydown", onKey);
   }, []);
   const featuredItems: ProjectData[] = [
+    {
+      title: "Bank Sampah BERLIAN",
+      description:
+        "A modern, integrated waste bank management system that enables users to trade sorted plastic waste for financial savings, featuring role-based dashboards, pickup scheduling, and interactive branch maps.",
+      image: "/images/berlian1.png",
+      liveUrl: "https://berlian-neon.vercel.app/",
+      githubUrl: "https://github.com/daffnr/berlian",
+      techStack: ["Next.js", "React", "Tailwind CSS", "Prisma", "NextAuth.js"],
+      previewImages: [
+        "/images/berlian1.png",
+        "/images/berlian2.png",
+        "/images/berlian3.png",
+        "/images/berlian4.png",
+      ],
+    },
     {
       title: "ngoCare Medical Supplies",
       description:
@@ -35,27 +55,22 @@ const FeaturedProjects = () => {
     },
     {
       title: "ContactHub CRM",
-      description: "SaaS-inspired CRM dashboard for managing contacts, relationships, and business networks.",
+      description:
+        "SaaS-inspired CRM dashboard for managing contacts, relationships, and business networks.",
       image: "/images/heroCH.png",
       liveUrl: "https://contact-hub-kohl.vercel.app/",
       githubUrl: "https://github.com/daffnr/ContactHub",
-      techStack: ["React","TypeScript","Tailwind CSS","TanStack Query","Framer Motion"],
-      previewImages: ["/images/heroCH.png","/images/ch1.png", "/images/ch2.png"],
-    },
-    {
-      title: "SIMS PPOB",
-      description:
-        "SIMS PPOB is an online platform that allows users to pay bills and manage their transactions easily.",
-      image: "/images/ssSimsppob1.png",
-      liveUrl: "https://sims-ppob-daffa-naufal-ramadhan.vercel.app/",
-      githubUrl: "https://github.com/daffnr",
-      techStack: ["React", "Redux Toolkit", "React Router", "Styled Components"],
+      techStack: [
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "TanStack Query",
+        "Framer Motion",
+      ],
       previewImages: [
-        "/images/ssSimsppob2.png",
-        "/images/ssSimsppob1.png",
-        "/images/ssSimsppob3.png",
-        "/images/ssSimsppob4.png",
-        "/images/ssSimsppob5.png",
+        "/images/heroCH.png",
+        "/images/ch1.png",
+        "/images/ch2.png",
       ],
     },
   ];
@@ -70,10 +85,12 @@ const FeaturedProjects = () => {
                 Featured <span className="text-yellow-400">Projects</span>
               </h2>
               <p className="text-slate-400 text-lg max-w-2xl">
-                A curated collection of projects showcasing modern web development, scalable architecture, and thoughtful user experiences.
+                A curated collection of projects showcasing modern web
+                development, scalable architecture, and thoughtful user
+                experiences.
               </p>
             </div>
-            <Link 
+            <Link
               href="/services#project"
               className="px-8 py-3 bg-white/5 hover:bg-white/10 text-white border border-white/10 rounded-full transition-all duration-300 font-semibold"
             >
@@ -84,10 +101,10 @@ const FeaturedProjects = () => {
 
         <BentoGrid className="gap-8">
           {featuredItems.map((item, i) => (
-            <FadeInWrapper 
+            <FadeInWrapper
               key={i}
-              direction="up" 
-              delay={200 + i * 100} 
+              direction="up"
+              delay={200 + i * 100}
               duration={600}
             >
               <BentoGridItem
