@@ -11,17 +11,21 @@ const AboutPreview = () => {
             <div className="relative">
               <div className="absolute -top-4 -left-4 w-24 h-24 bg-yellow-400/10 rounded-full blur-3xl" />
               <h2 className="text-3xl md:text-5xl font-bold text-white mb-8 leading-tight">
-                Passion for <span className="text-yellow-400">Innovation</span> & Problem Solving
+                Passion for <span className="text-yellow-400">Innovation</span>{" "}
+                & Problem Solving
               </h2>
               <p className="text-slate-300 text-lg md:text-xl leading-relaxed mb-8 max-w-xl">
-               Passionate about building modern web applications with a focus on scalability, performance, and user experience.
+                Passionate about building modern web applications with a focus
+                on scalability, performance, and user experience.
               </p>
-              <Link 
+              <Link
                 href="/about"
                 className="inline-flex items-center gap-2 text-yellow-400 font-bold text-lg group"
               >
-                Read More About Me 
-                <span className="group-hover:translate-x-2 transition-transform duration-300">→</span>
+                Read More About Me
+                <span className="group-hover:translate-x-2 transition-transform duration-300">
+                  →
+                </span>
               </Link>
             </div>
           </FadeInWrapper>
@@ -30,11 +34,17 @@ const AboutPreview = () => {
             <div className="grid grid-cols-2 gap-4">
               <div className="p-8 bg-[#111] border border-white/10 rounded-3xl">
                 <h3 className="text-3xl font-bold text-yellow-400 mb-2">10+</h3>
-                <p className="text-slate-400 text-sm uppercase tracking-widest font-semibold">Projects Completed</p>
+                <p className="text-slate-400 text-sm uppercase tracking-widest font-semibold">
+                  Projects Completed
+                </p>
               </div>
               <div className="p-8 bg-[#111] border border-white/10 rounded-3xl mt-8">
-                <h3 className="text-3xl font-bold text-yellow-400 mb-2">FRONT-END</h3>
-                <p className="text-slate-400 text-sm uppercase tracking-widest font-semibold">Specialization</p>
+                <h3 className="text-3xl font-bold text-yellow-400 mb-2">
+                  FULLSTACK
+                </h3>
+                <p className="text-slate-400 text-sm uppercase tracking-widest font-semibold">
+                  Specialization
+                </p>
               </div>
             </div>
           </FadeInWrapper>

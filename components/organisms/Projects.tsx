@@ -14,7 +14,7 @@ const Projects: React.FC<{ id?: string }> = ({ id }) => {
     {
       title: "Bank Sampah BERLIAN",
       description:
-        "A modern, integrated waste bank management system that enables users to trade sorted plastic waste for financial savings, featuring role-based dashboards, pickup scheduling, and interactive branch maps.",
+        "An integrated waste bank management system for trading sorted plastic waste into financial savings.",
       image: "/images/berlian1.png",
       liveUrl: "https://berlian-neon.vercel.app/",
       githubUrl: "https://github.com/daffnr/berlian",
@@ -24,6 +24,20 @@ const Projects: React.FC<{ id?: string }> = ({ id }) => {
         "/images/berlian2.png",
         "/images/berlian3.png",
         "/images/berlian4.png",
+      ],
+    },
+    {
+      title: "KRS Management System",
+      description:
+        "An academic course registration system (KRS) for managing student courses, grades, and academic data.",
+      image: "/images/krs1.png",
+      liveUrl: "https://krs-management.infinityfreeapp.com/",
+      githubUrl: "https://github.com/daffnr/krs-management-system",
+      techStack: ["PHP Native", "MySQL", "Tailwind CSS"],
+      previewImages: [
+        "/images/krs1.png",
+        "/images/krs2.png",
+        "/images/krs3.png",
       ],
     },
     {
@@ -39,6 +53,20 @@ const Projects: React.FC<{ id?: string }> = ({ id }) => {
         "/images/ngoCare3.png",
         "/images/ngoCare4.png",
         "/images/ngoCare4.png",
+      ],
+    },
+    {
+      title: "PT Multidaya Inti",
+      description:
+        "company profile website for PT Multidaya Inti, built using WordPress and Elementor.",
+      image: "/images/mdi1.png",
+      liveUrl: "https://multidayainti.co.id/",
+      techStack: ["WordPress", "Elementor", "HTML", "CSS"],
+      previewImages: [
+        "/images/mdi1.png",
+        "/images/mdi2.png",
+        "/images/mdi3.png",
+        "/images/mdi4.png",
       ],
     },
     {

@@ -26,7 +26,7 @@ const FeaturedProjects = () => {
     {
       title: "Bank Sampah BERLIAN",
       description:
-        "A modern, integrated waste bank management system that enables users to trade sorted plastic waste for financial savings, featuring role-based dashboards, pickup scheduling, and interactive branch maps.",
+        "An integrated waste bank management system for trading sorted plastic waste into financial savings.",
       image: "/images/berlian1.png",
       liveUrl: "https://berlian-neon.vercel.app/",
       githubUrl: "https://github.com/daffnr/berlian",
@@ -39,38 +39,32 @@ const FeaturedProjects = () => {
       ],
     },
     {
+      title: "KRS Management System",
+      description:
+        "An academic course registration system (KRS) for managing student courses, grades, and academic data.",
+      image: "/images/krs1.png",
+      liveUrl: "https://krs-management.infinityfreeapp.com/",
+      githubUrl: "https://github.com/daffnr/krs-management-system",
+      techStack: ["PHP Native", "MySQL", "Tailwind CSS"],
+      previewImages: [
+        "/images/krs1.png",
+        "/images/krs2.png",
+        "/images/krs3.png",
+      ],
+    },
+    {
       title: "ngoCare Medical Supplies",
       description:
         "A modern company profile and semi e-commerce website for a medical equipment business.",
       image: "/images/ngoCare1.png",
       liveUrl: "https://ngo-care-solutions.vercel.app/",
-      githubUrl: "https://github.com/daffnr",
+      githubUrl: "https://github.com/daffnr/ngoCare-Solutions",
       techStack: ["Next.js", "React", "Framer Motion"],
       previewImages: [
         "/images/ngoCare2.png",
         "/images/ngoCare3.png",
         "/images/ngoCare4.png",
         "/images/ngoCare4.png",
-      ],
-    },
-    {
-      title: "ContactHub CRM",
-      description:
-        "SaaS-inspired CRM dashboard for managing contacts, relationships, and business networks.",
-      image: "/images/heroCH.png",
-      liveUrl: "https://contact-hub-kohl.vercel.app/",
-      githubUrl: "https://github.com/daffnr/ContactHub",
-      techStack: [
-        "React",
-        "TypeScript",
-        "Tailwind CSS",
-        "TanStack Query",
-        "Framer Motion",
-      ],
-      previewImages: [
-        "/images/heroCH.png",
-        "/images/ch1.png",
-        "/images/ch2.png",
       ],
     },
   ];
